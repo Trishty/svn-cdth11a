@@ -1,0 +1,15 @@
+D:\BaiTap\PView\PView\bin\Debug\Test.exe
+D:\BaiTap\PView\PView\bin\Debug\Test.pdb
+D:\BaiTap\PView\PView\bin\Debug\Interop.WMPLib.dll
+D:\BaiTap\PView\PView\bin\Debug\AxInterop.WMPLib.dll
+D:\BaiTap\PView\PView\obj\Debug\ResolveAssemblyReference.cache
+D:\BaiTap\PView\PView\obj\Debug\Interop.WMPLib.dll
+D:\BaiTap\PView\PView\obj\Debug\AxInterop.WMPLib.dll
+D:\BaiTap\PView\PView\obj\Debug\PView.csproj.ResolveComReference.cache
+D:\BaiTap\PView\PView\obj\Debug\Test.PView.resources
+D:\BaiTap\PView\PView\obj\Debug\Test.Properties.Resources.resources
+D:\BaiTap\PView\PView\obj\Debug\PView.csproj.GenerateResource.Cache
+D:\BaiTap\PView\PView\obj\Debug\Test.exe
+D:\BaiTap\PView\PView\obj\Debug\Test.pdb
+D:\BaiTap\CNPM_Nhom4_CDTH11A\DoAnNho\PView\PView\obj\Debug\Test.exe
+D:\BaiTap\CNPM_Nhom4_CDTH11A\DoAnNho\PView\PView\obj\Debug\Test.pdb
