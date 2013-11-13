@@ -18,3 +18,25 @@ D:\BaiTap\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
 D:\BaiTap\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQLKS.resources
 D:\BaiTap\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
 D:\BaiTap\DoAnCNPM\CNPM\obj\Debug\CNPM.csproj.GenerateResource.Cache
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\SVN_Project\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.exe
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\SVN_Project\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\SVN_Project\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\CNPM.exe
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\SVN_Project\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\CNPM.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\SVN_Project\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\ResolveAssemblyReference.cache
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\SVN_Project\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmHoaDon.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\SVN_Project\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\SVN_Project\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQLKS.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\SVN_Project\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\SVN_Project\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.csproj.GenerateResource.Cache
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.exe
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\bin\Debug\CNPM.exe
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\bin\Debug\CNPM.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\ResolveAssemblyReference.cache
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmHoaDon.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQLKS.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.csproj.GenerateResource.Cache
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyNhanVien.resources
