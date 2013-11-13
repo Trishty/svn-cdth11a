@@ -147,7 +147,9 @@ namespace CNPM
 
         private void TraCuuPhongToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmTraCuuPhong child = new frmTraCuuPhong();
+            child.MdiParent = this;
+            child.Show();
         }
 
         private void LapPhieuThuePhongToolStripMenuItem_Click(object sender, EventArgs e)
@@ -165,6 +167,13 @@ namespace CNPM
         private void ThayDoiQuiDinhToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void quanLyNhanVienToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuanLyNhanVien child = new frmQuanLyNhanVien();
+            child.MdiParent = this;
+            child.Show();
         }
     }
 }
