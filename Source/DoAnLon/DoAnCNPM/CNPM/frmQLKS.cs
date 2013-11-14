@@ -159,19 +159,30 @@ namespace CNPM
             Child.Show();
         }
 
-        private void LapBaoCaoThángToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void ThayDoiQuiDinhToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            frmThayDoiCacQuyDinh Child = new frmThayDoiCacQuyDinh();
+            Child.MdiParent = this;
+            Child.Show();
         }
 
         private void quanLyNhanVienToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmQuanLyNhanVien child = new frmQuanLyNhanVien();
+            child.MdiParent = this;
+            child.Show();
+        }
+
+        private void dangnhapToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmDangNhap child = new frmDangNhap();
+            child.MdiParent = this;
+            child.Show();
+        }
+
+        private void LapBaoCaoThangToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLapBaoCaoDoanhThu child = new frmLapBaoCaoDoanhThu();
             child.MdiParent = this;
             child.Show();
         }

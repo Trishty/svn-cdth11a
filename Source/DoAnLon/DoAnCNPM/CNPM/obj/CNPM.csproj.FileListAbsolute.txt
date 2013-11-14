@@ -40,3 +40,18 @@ E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTr
 E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
 E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.csproj.GenerateResource.Cache
 E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyNhanVien.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.exe
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\CNPM.exe
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\CNPM.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\ResolveAssemblyReference.cache
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDangNhap.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmHoaDon.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmLapBaoCaoDoanhThu.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQLKS.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyNhanVien.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmThayDoiCacQuyDinh.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.csproj.GenerateResource.Cache
