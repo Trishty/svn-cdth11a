@@ -36,11 +36,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmHoaDon.Designer.cs">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLapBaoCaoDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLapBaoCaoDoanhThu.Designer.cs">
+      <DependentUpon>frmLapBaoCaoDoanhThu.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPhieuThuePhong.cs">
       <SubType>Form</SubType>
@@ -60,6 +72,12 @@
     <Compile Include="frmQuanLyNhanVien.Designer.cs">
       <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmThayDoiCacQuyDinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmThayDoiCacQuyDinh.Designer.cs">
+      <DependentUpon>frmThayDoiCacQuyDinh.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTraCuuPhong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,9 +86,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmDangNhap.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmHoaDon.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLapBaoCaoDoanhThu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmLapBaoCaoDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhieuThuePhong.resx">
       <SubType>Designer</SubType>
@@ -83,6 +109,10 @@
     <EmbeddedResource Include="frmQuanLyNhanVien.resx">
       <SubType>Designer</SubType>
       <DependentUpon>frmQuanLyNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmThayDoiCacQuyDinh.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frmThayDoiCacQuyDinh.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTraCuuPhong.resx">
       <SubType>Designer</SubType>
