@@ -5,6 +5,8 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using DTO;
+using BUS;
 
 namespace CNPM
 {
@@ -21,6 +23,7 @@ namespace CNPM
         #region PageLoad
         private void frmPhieuThuePhong_Load(object sender, EventArgs e)
         {
+            txtMa.Enabled = false;
             btnLuu.Enabled = false;
         }
         #endregion
@@ -28,7 +31,21 @@ namespace CNPM
         #region Lưu
         private void btnLuu_Click(object sender, EventArgs e)
         {
-
+            //lay thong tin phieu thue
+            PhieuThueDTO ptDTO = new PhieuThueDTO();
+            ptDTO.MaPT = txtMa.Text;
+            ptDTO.Phong = txtPhong.Text;
+            ptDTO.NgayThue = dtThue.Text;
+            ptDTO.NgayTra = dtTra.Text;
+            if (PhieuThueBUS.ThemPT(ptDTO) == true)
+            {
+                MessageBox.Show("Lập phiếu thuê thành công!");
+            }
+            else
+            {
+                MessageBox.Show("Lập phiếu thuê thất bại!");
+            }
+            btnLuu.Enabled = false;
         }
         #endregion
 
@@ -63,7 +80,17 @@ namespace CNPM
                 dataGridView1.Rows[rownum].Cells["STT"].Value = iSTT;
                 rownum += 1;
             //}
-            }
-        #endregion
         }
+        #endregion
+
+        #region Mở nút Lưu
+        private void txtPhong_TextChanged(object sender, EventArgs e)
+        {
+            if(txtPhong.Text != "")
+                btnLuu.Enabled = true;
+            else
+                btnLuu.Enabled = false;
+        }
+        #endregion
+    }
 }

@@ -35,13 +35,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtPhong = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
-            this.btnThoat = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.dtTra = new System.Windows.Forms.DateTimePicker();
-            this.txtMa = new System.Windows.Forms.TextBox();
-            this.dtThue = new System.Windows.Forms.DateTimePicker();
             this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.KH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LoaiKH = new System.Windows.Forms.DataGridViewComboBoxColumn();
@@ -49,6 +42,13 @@
             this.GioiTinh = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.DC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dtTra = new System.Windows.Forms.DateTimePicker();
+            this.txtMa = new System.Windows.Forms.TextBox();
+            this.dtThue = new System.Windows.Forms.DateTimePicker();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -57,6 +57,7 @@
             this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Location = new System.Drawing.Point(-3, -2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(755, 68);
@@ -97,6 +98,7 @@
             this.txtPhong.Name = "txtPhong";
             this.txtPhong.Size = new System.Drawing.Size(143, 20);
             this.txtPhong.TabIndex = 1;
+            this.txtPhong.TextChanged += new System.EventHandler(this.txtPhong_TextChanged);
             // 
             // dataGridView1
             // 
@@ -114,6 +116,54 @@
             this.dataGridView1.Size = new System.Drawing.Size(688, 150);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView1_RowsAdded);
+            // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            this.STT.ReadOnly = true;
+            this.STT.Width = 50;
+            // 
+            // KH
+            // 
+            this.KH.HeaderText = "Khách Hàng";
+            this.KH.Name = "KH";
+            // 
+            // LoaiKH
+            // 
+            this.LoaiKH.HeaderText = "Loại Khách";
+            this.LoaiKH.Items.AddRange(new object[] {
+            "Nội Địa",
+            "Nước Ngoài"});
+            this.LoaiKH.Name = "LoaiKH";
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "Giấy Tờ Tùy Thân";
+            this.ID.Name = "ID";
+            this.ID.Width = 120;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.GioiTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.GioiTinh.Width = 75;
+            // 
+            // DC
+            // 
+            this.DC.HeaderText = "Địa Chỉ";
+            this.DC.Name = "DC";
+            // 
+            // SoDT
+            // 
+            this.SoDT.HeaderText = "Số Điện Thoại";
+            this.SoDT.Name = "SoDT";
             // 
             // btnLuu
             // 
@@ -179,54 +229,6 @@
             this.dtThue.Name = "dtThue";
             this.dtThue.Size = new System.Drawing.Size(143, 20);
             this.dtThue.TabIndex = 14;
-            // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            this.STT.ReadOnly = true;
-            this.STT.Width = 50;
-            // 
-            // KH
-            // 
-            this.KH.HeaderText = "Khách Hàng";
-            this.KH.Name = "KH";
-            // 
-            // LoaiKH
-            // 
-            this.LoaiKH.HeaderText = "Loại Khách";
-            this.LoaiKH.Items.AddRange(new object[] {
-            "Nội Địa",
-            "Nước Ngoài"});
-            this.LoaiKH.Name = "LoaiKH";
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "Giấy Tờ Tùy Thân";
-            this.ID.Name = "ID";
-            this.ID.Width = 120;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ",
-            "Khác"});
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.GioiTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.GioiTinh.Width = 75;
-            // 
-            // DC
-            // 
-            this.DC.HeaderText = "Địa Chỉ";
-            this.DC.Name = "DC";
-            // 
-            // SoDT
-            // 
-            this.SoDT.HeaderText = "Số Điện Thoại";
-            this.SoDT.Name = "SoDT";
             // 
             // frmPhieuThuePhong
             // 
