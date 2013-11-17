@@ -35,13 +35,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtPhong = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoaiKH = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.DC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
@@ -49,6 +42,13 @@
             this.dtTra = new System.Windows.Forms.DateTimePicker();
             this.txtMa = new System.Windows.Forms.TextBox();
             this.dtThue = new System.Windows.Forms.DateTimePicker();
+            this.STT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiKH = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.DC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,50 +115,6 @@
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView1_RowsAdded);
             // 
-            // STT
-            // 
-            this.STT.HeaderText = "STT";
-            this.STT.Name = "STT";
-            this.STT.ReadOnly = true;
-            this.STT.Width = 50;
-            // 
-            // KH
-            // 
-            this.KH.HeaderText = "Khách Hàng";
-            this.KH.Name = "KH";
-            // 
-            // LoaiKH
-            // 
-            this.LoaiKH.HeaderText = "Loại Khách";
-            this.LoaiKH.Items.AddRange(new object[] {
-            "Nội Địa",
-            "Nước Ngoài"});
-            this.LoaiKH.Name = "LoaiKH";
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "Giấy Tờ Tùy Thân";
-            this.ID.Name = "ID";
-            this.ID.Width = 120;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.GioiTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.GioiTinh.Width = 75;
-            // 
-            // DC
-            // 
-            this.DC.HeaderText = "Địa Chỉ";
-            this.DC.Name = "DC";
-            // 
-            // SoDT
-            // 
-            this.SoDT.HeaderText = "Số Điện Thoại";
-            this.SoDT.Name = "SoDT";
-            // 
             // btnLuu
             // 
             this.btnLuu.Location = new System.Drawing.Point(191, 374);
@@ -224,6 +180,54 @@
             this.dtThue.Size = new System.Drawing.Size(143, 20);
             this.dtThue.TabIndex = 14;
             // 
+            // STT
+            // 
+            this.STT.HeaderText = "STT";
+            this.STT.Name = "STT";
+            this.STT.ReadOnly = true;
+            this.STT.Width = 50;
+            // 
+            // KH
+            // 
+            this.KH.HeaderText = "Khách Hàng";
+            this.KH.Name = "KH";
+            // 
+            // LoaiKH
+            // 
+            this.LoaiKH.HeaderText = "Loại Khách";
+            this.LoaiKH.Items.AddRange(new object[] {
+            "Nội Địa",
+            "Nước Ngoài"});
+            this.LoaiKH.Name = "LoaiKH";
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "Giấy Tờ Tùy Thân";
+            this.ID.Name = "ID";
+            this.ID.Width = 120;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.GioiTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.GioiTinh.Width = 75;
+            // 
+            // DC
+            // 
+            this.DC.HeaderText = "Địa Chỉ";
+            this.DC.Name = "DC";
+            // 
+            // SoDT
+            // 
+            this.SoDT.HeaderText = "Số Điện Thoại";
+            this.SoDT.Name = "SoDT";
+            // 
             // frmPhieuThuePhong
             // 
             this.AcceptButton = this.btnLuu;
@@ -267,15 +271,15 @@
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dtTra;
+        private System.Windows.Forms.TextBox txtMa;
+        private System.Windows.Forms.DateTimePicker dtThue;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn KH;
         private System.Windows.Forms.DataGridViewComboBoxColumn LoaiKH;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn GioiTinh;
+        private System.Windows.Forms.DataGridViewComboBoxColumn GioiTinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn DC;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoDT;
-        private System.Windows.Forms.DateTimePicker dtTra;
-        private System.Windows.Forms.TextBox txtMa;
-        private System.Windows.Forms.DateTimePicker dtThue;
     }
 }

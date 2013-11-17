@@ -55,3 +55,18 @@ D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmThayDoiCacQuyDinh
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.csproj.GenerateResource.Cache
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.exe
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.pdb
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\CNPM.exe
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\CNPM.pdb
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDangNhap.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmHoaDon.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmLapBaoCaoDoanhThu.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQLKS.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyNhanVien.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmThayDoiCacQuyDinh.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.csproj.GenerateResource.Cache
