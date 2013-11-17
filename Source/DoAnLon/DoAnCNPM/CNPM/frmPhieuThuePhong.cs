@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,16 +18,21 @@ namespace CNPM
         int iSTT = 0;
         int rownum = 0;
 
+        #region PageLoad
         private void frmPhieuThuePhong_Load(object sender, EventArgs e)
         {
             btnLuu.Enabled = false;
         }
+        #endregion
 
+        #region Lưu
         private void btnLuu_Click(object sender, EventArgs e)
         {
 
         }
+        #endregion
 
+        #region Huỷ
         private void btnHuy_Click(object sender, EventArgs e)
         {
             txtMa.Text = "";
@@ -40,12 +45,16 @@ namespace CNPM
             //dataGridView1.Refresh();
             btnLuu.Enabled = false;
         }
+        #endregion
 
+        #region Thoát
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        #endregion
 
+        #region Tạo STT tự động
         private void dataGridView1_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
             //foreach (DataGridViewRow row in dataGridView1.Rows)
@@ -54,6 +63,7 @@ namespace CNPM
                 dataGridView1.Rows[rownum].Cells["STT"].Value = iSTT;
                 rownum += 1;
             //}
+            }
+        #endregion
         }
-    }
 }

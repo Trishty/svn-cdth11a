@@ -14,7 +14,7 @@ namespace CNPM
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmQLKS());
+            Application.Run(new frmMain());
         }
     }
 }

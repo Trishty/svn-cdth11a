@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,13 +16,17 @@ namespace CNPM
         }
 
         int iSTT = 0;
-        int rownum = 0; 
+        int rownum = 0;
+
+        #region PageLoad
         private void frmHoaDon_Load(object sender, EventArgs e)
         {
             btnTinh.Enabled = false;
             btnLuu.Enabled = false;
         }
+        #endregion
 
+        #region Tính
         private void btnTinh_Click(object sender, EventArgs e)
         {
             double dTriGia = 0;
@@ -35,12 +39,16 @@ namespace CNPM
             btnTinh.Enabled = false;
             btnLuu.Enabled = true;
         }
+        #endregion
 
+        #region Lưu
         private void btnLuu_Click(object sender, EventArgs e)
         {
 
         }
+        #endregion
 
+        #region Huỷ
         private void btnHuy_Click(object sender, EventArgs e)
         {
             txtMaHD.Text = "";
@@ -55,12 +63,16 @@ namespace CNPM
             btnTinh.Enabled = false;
             btnLuu.Enabled = false;
         }
+        #endregion
 
+        #region Thoát
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        #endregion
 
+        #region Cột thay đổi
         private void dataGridView1_CellValueChanged(object sender, DataGridViewCellEventArgs e)
         {
             
@@ -88,12 +100,15 @@ namespace CNPM
                     dataGridView1.Rows[i].Cells[4].Value = "";  
             }
         }
+        #endregion
 
+        #region Tạo STT tự động
         private void dataGridView1_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
         {
             iSTT += 1;
             dataGridView1.Rows[rownum].Cells[0].Value = iSTT;
             rownum += 1;
         }
+        #endregion
     }
 }
