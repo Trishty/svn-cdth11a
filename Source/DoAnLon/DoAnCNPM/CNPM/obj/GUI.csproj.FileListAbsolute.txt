@@ -18,5 +18,5 @@ C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachS
 C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
 C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
 C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
-C:\Documents and Settings\Skamylove\My Documents\svn-group4\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
-C:\Documents and Settings\Skamylove\My Documents\svn-group4\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.dll
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.pdb
