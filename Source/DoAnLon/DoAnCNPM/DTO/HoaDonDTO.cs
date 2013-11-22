@@ -20,19 +20,12 @@ namespace DTO
             get { return _MaKH; }
             set { _MaKH = value; }
         }
-        private string _MaNV;
+        private string _TenDN;
 
-        public string MaNV
+        public string TenDN
         {
-            get { return _MaNV; }
-            set { _MaNV = value; }
-        }
-        private string _TenKH;
-
-        public string TenKH
-        {
-            get { return _TenKH; }
-            set { _TenKH = value; }
+            get { return _TenDN; }
+            set { _TenDN = value; }
         }
         private string _DCKH;
 
@@ -76,33 +69,19 @@ namespace DTO
             get { return _DonGia; }
             set { _DonGia = value; }
         }
-        private string _PhuThu;
-
-        public string PhuThu
-        {
-            get { return _PhuThu; }
-            set { _PhuThu = value; }
-        }
-        private string _HeSo;
-
-        public string HeSo
-        {
-            get { return _HeSo; }
-            set { _HeSo = value; }
-        }
-        private string _ThanhTien;
-
-        public string ThanhTien
-        {
-            get { return _ThanhTien; }
-            set { _ThanhTien = value; }
-        }
         private string _TriGia;
 
         public string TriGia
         {
             get { return _TriGia; }
             set { _TriGia = value; }
+        }
+        private string _Tam;
+
+        public string Tam
+        {
+            get { return _Tam; }
+            set { _Tam = value; }
         }
     }
 }
