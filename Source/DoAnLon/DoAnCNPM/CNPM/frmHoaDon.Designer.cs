@@ -49,7 +49,6 @@
             this.txtDC = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnTinh = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.dtLap = new System.Windows.Forms.DateTimePicker();
             this.txtTriGia = new System.Windows.Forms.TextBox();
@@ -57,6 +56,7 @@
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtMaNV = new System.Windows.Forms.TextBox();
+            this.btnXoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +83,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(313, 468);
+            this.btnLuu.Location = new System.Drawing.Point(187, 468);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 9;
@@ -199,8 +199,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
             this.label1.Location = new System.Drawing.Point(-2, 0);
@@ -235,16 +234,6 @@
             this.label7.Size = new System.Drawing.Size(38, 13);
             this.label7.TabIndex = 19;
             this.label7.Text = "Trị Giá";
-            // 
-            // btnTinh
-            // 
-            this.btnTinh.Location = new System.Drawing.Point(188, 468);
-            this.btnTinh.Name = "btnTinh";
-            this.btnTinh.Size = new System.Drawing.Size(75, 23);
-            this.btnTinh.TabIndex = 8;
-            this.btnTinh.Text = "Tính Tiền";
-            this.btnTinh.UseVisualStyleBackColor = true;
-            this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
             // 
             // label8
             // 
@@ -304,6 +293,15 @@
             this.txtMaNV.Size = new System.Drawing.Size(143, 20);
             this.txtMaNV.TabIndex = 2;
             // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(313, 468);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.TabIndex = 20;
+            this.btnXoa.Text = "Xoá";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            // 
             // frmHoaDon
             // 
             this.AcceptButton = this.btnLuu;
@@ -311,6 +309,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(838, 509);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtMaNV);
             this.Controls.Add(this.txtTenKH);
@@ -318,7 +317,6 @@
             this.Controls.Add(this.txtTriGia);
             this.Controls.Add(this.dtLap);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.btnTinh);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtDC);
             this.Controls.Add(this.label5);
@@ -356,7 +354,6 @@
         private System.Windows.Forms.TextBox txtDC;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnTinh;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.DataGridViewTextBoxColumn STT;
         private System.Windows.Forms.DataGridViewTextBoxColumn Phong;
@@ -372,5 +369,6 @@
         private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtMaNV;
+        private System.Windows.Forms.Button btnXoa;
     }
 }

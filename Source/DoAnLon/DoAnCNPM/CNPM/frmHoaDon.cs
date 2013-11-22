@@ -18,26 +18,20 @@ namespace CNPM
         int iSTT = 0;
         int rownum = 0;
 
+        //double dTriGia = 0;
+        //for (int i = 0; i < dataGridView1.Rows.Count; i++)
+        //{
+        //    double dTongTien = Convert.ToDouble(dataGridView1.Rows[i].Cells[7].Value);
+        //    dTriGia += dTongTien;
+        //    txtTriGia.Text = dTriGia.ToString();
+        //}
+        //btnTinh.Enabled = false;
+        //btnLuu.Enabled = true;
+
         #region PageLoad
         private void frmHoaDon_Load(object sender, EventArgs e)
         {
-            btnTinh.Enabled = false;
-            btnLuu.Enabled = false;
-        }
-        #endregion
 
-        #region Tính
-        private void btnTinh_Click(object sender, EventArgs e)
-        {
-            double dTriGia = 0;
-            for (int i = 0; i < dataGridView1.Rows.Count; i++)
-            {
-                double dTongTien = Convert.ToDouble(dataGridView1.Rows[i].Cells[7].Value);
-                dTriGia += dTongTien;
-                txtTriGia.Text = dTriGia.ToString();
-            }
-            btnTinh.Enabled = false;
-            btnLuu.Enabled = true;
         }
         #endregion
 
@@ -60,8 +54,6 @@ namespace CNPM
             iSTT = 0;
             rownum = 0;
             dataGridView1.Rows.Clear();
-            btnTinh.Enabled = false;
-            btnLuu.Enabled = false;
         }
         #endregion
 
@@ -93,8 +85,6 @@ namespace CNPM
                     double dHeSo = Convert.ToDouble(dataGridView1.Rows[i].Cells[6].Value);
                     double dThanhTien = dSoNgayThue * dDonGia + (dDonGia*(dPhuThu / 100)) * dHeSo;
                     dataGridView1.Rows[i].Cells[4].Value = dThanhTien.ToString();
-                    btnTinh.Enabled = true;
-                    btnLuu.Enabled = false;
                 }
                 else
                     dataGridView1.Rows[i].Cells[4].Value = "";  

@@ -34,6 +34,13 @@ namespace DTO
             get { return _NgayTra; }
             set { _NgayTra = value; }
         }
+        private string _MaKH;
+
+        public string MaKH
+        {
+            get { return _MaKH; }
+            set { _MaKH = value; }
+        }
         private string _KhachHang;
 
         public string KhachHang
