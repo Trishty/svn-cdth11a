@@ -27,7 +27,7 @@ namespace CNPM
         #region PageLoad
         private void frmPhieuThuePhong_Load(object sender, EventArgs e)
         {
-            //Nạp danh sách nhà cung cấp
+            //Nạp danh sách phòng
             DataSet ds = new DataSet();
             ds = PhieuThueBUS.LayDanhSachPhong(ptDTO);
             cboPhong.DataSource = ds.Tables[0];
