@@ -30,6 +30,18 @@ namespace DAO
         }
         #endregion
 
+        #region Lấy dữ liệu
+        public static DataSet GetDataSet(string strTenBang, SqlConnection con)
+        {
+            string sql = null;
+            sql = "Select * from " + strTenBang;
+            SqlDataAdapter da = new SqlDataAdapter(sql, con);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            return ds;
+        }
+        #endregion
+
         #region Thực thi câu lệnh sql
         public static bool ExecuteNonQuery(string strsql, SqlConnection con)
         {
