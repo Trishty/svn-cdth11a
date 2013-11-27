@@ -31,11 +31,9 @@ namespace DAO
         #endregion
 
         #region Lấy dữ liệu
-        public static DataSet GetDataSet(string strTenBang, SqlConnection con)
+        public static DataSet GetDataSet(string strSQL, SqlConnection con)
         {
-            string sql = null;
-            sql = "Select * from " + strTenBang;
-            SqlDataAdapter da = new SqlDataAdapter(sql, con);
+            SqlDataAdapter da = new SqlDataAdapter(strSQL, con);
             DataSet ds = new DataSet();
             da.Fill(ds);
             return ds;
