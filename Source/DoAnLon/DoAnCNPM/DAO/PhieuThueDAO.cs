@@ -47,14 +47,14 @@ namespace DAO
         public static DataSet LayDanhSachPhong(PhieuThueDTO ptDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
-            string strTenBang = "Phong";
+            string strTenBang = "Select * from Phong";
             return DataProvider.GetDataSet(strTenBang, con);
         }
 
         public static DataSet LayDanhLoaiKhach(PhieuThueDTO ptDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
-            string strTenBang = "LoaiKhach";
+            string strTenBang = "Select * from LoaiKhach";
             return DataProvider.GetDataSet(strTenBang, con);
         }
     }

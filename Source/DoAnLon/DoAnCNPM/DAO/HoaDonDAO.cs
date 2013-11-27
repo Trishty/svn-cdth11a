@@ -39,14 +39,14 @@ namespace DAO
         public static DataSet LayDanhSachKH(HoaDonDTO hdDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
-            string strTenBang = "KhachHang";
+            string strTenBang = "Select * from KhachHang";
             return DataProvider.GetDataSet(strTenBang, con);
         }
 
         public static DataSet LayDanhSachNV(HoaDonDTO hdDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
-            string strTenBang = "NhanVien";
+            string strTenBang = "Select * from NhanVien";
             return DataProvider.GetDataSet(strTenBang, con);
         }
 
@@ -61,7 +61,7 @@ namespace DAO
         public static DataSet LayDanhSachPhong(HoaDonDTO hdDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
-            string strTenBang = "Phong";
+            string strTenBang = "Select * from Phong";
             return DataProvider.GetDataSet(strTenBang, con);
         }
 
