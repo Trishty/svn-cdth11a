@@ -20,3 +20,25 @@ C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachS
 C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
 C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.dll
 C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\ResolveAssemblyReference.cache
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDangNhap.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDanhMucPhong.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmHoaDon.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmLapBaoCaoDoanhThu.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmMain.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyNhanVien.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmThayDoiCacQuyDinh.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\obj\Debug\GUI.csproj.GenerateResource.Cache
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\bin\Debug\BUS.dll
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\bin\Debug\DTO.dll
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\bin\Debug\DAO.dll
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\bin\Debug\BUS.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\bin\Debug\DAO.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\CNPM\bin\Debug\DTO.pdb
