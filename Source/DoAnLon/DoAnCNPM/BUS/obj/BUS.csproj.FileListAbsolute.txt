@@ -7,3 +7,12 @@ C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\BUS\bin\Debug\DTO.pdb
 C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\BUS\bin\Debug\DAO.pdb
 C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\BUS\obj\Debug\BUS.dll
 C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\BUS\obj\Debug\BUS.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\BUS\obj\Debug\ResolveAssemblyReference.cache
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\BUS\obj\Debug\BUS.dll
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\BUS\obj\Debug\BUS.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\BUS\bin\Debug\BUS.dll
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\BUS\bin\Debug\BUS.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\BUS\bin\Debug\DAO.dll
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\BUS\bin\Debug\DTO.dll
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\BUS\bin\Debug\DTO.pdb
+E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\BUS\bin\Debug\DAO.pdb
