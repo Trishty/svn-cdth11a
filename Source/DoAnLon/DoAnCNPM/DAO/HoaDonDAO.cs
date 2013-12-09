@@ -69,7 +69,15 @@ namespace DAO
         {
             SqlConnection con = DataProvider.ConnectionString();
             string strsql = "select MaLP from Phong where MaPhong = "
-                + hdDTO.Tam;
+                + hdDTO.MaLP;
+            return DataProvider.ExecuteScalar(strsql, con);
+        }
+
+        public static string LayLoaiKhach(HoaDonDTO hdDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "select MaLK from KhachHang where MaKH = "
+                + hdDTO.MaKH;
             return DataProvider.ExecuteScalar(strsql, con);
         }
 
@@ -77,7 +85,31 @@ namespace DAO
         {
             SqlConnection con = DataProvider.ConnectionString();
             string strsql = "select GiaVN from LoaiPhong where MaLP = "
-                + hdDTO.Tam;
+                + hdDTO.MaLP;
+            return DataProvider.ExecuteScalar(strsql, con);
+        }
+
+        public static string LayHeSo(HoaDonDTO hdDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "select HeSo from LoaiKhach where MaLK = "
+                + hdDTO.MaLK;
+            return DataProvider.ExecuteScalar(strsql, con);
+        }
+
+        public static string LayTyLePhuThuMax(HoaDonDTO hdDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "select TyLePhuThuMax from LoaiPhong where MaLP = "
+                + hdDTO.MaLP;
+            return DataProvider.ExecuteScalar(strsql, con);
+        }
+
+        public static string LayTyLePhuThuMin(HoaDonDTO hdDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "select TyLePhuThuMin from LoaiPhong where MaLP = "
+                + hdDTO.MaLP;
             return DataProvider.ExecuteScalar(strsql, con);
         }
     }

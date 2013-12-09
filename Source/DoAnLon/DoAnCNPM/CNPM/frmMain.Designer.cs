@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.btnDM = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -36,10 +37,14 @@
             this.btnHD = new System.Windows.Forms.Button();
             this.btnBC = new System.Windows.Forms.Button();
             this.btnQD = new System.Windows.Forms.Button();
-            this.btnAbout = new System.Windows.Forms.Button();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnNV = new System.Windows.Forms.Button();
             this.btnKH = new System.Windows.Forms.Button();
+            this.sttbar = new System.Windows.Forms.StatusStrip();
+            this.stt1 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.sttbar.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnDM
@@ -56,7 +61,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(175, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(321, 37);
@@ -113,15 +118,15 @@
             this.btnQD.UseVisualStyleBackColor = true;
             this.btnQD.Click += new System.EventHandler(this.btnQD_Click);
             // 
-            // btnAbout
+            // btnLogout
             // 
-            this.btnAbout.Location = new System.Drawing.Point(361, 270);
-            this.btnAbout.Name = "btnAbout";
-            this.btnAbout.Size = new System.Drawing.Size(255, 42);
-            this.btnAbout.TabIndex = 9;
-            this.btnAbout.Text = "Thông tin nhóm";
-            this.btnAbout.UseVisualStyleBackColor = true;
-            this.btnAbout.Click += new System.EventHandler(this.btnAbout_Click);
+            this.btnLogout.Location = new System.Drawing.Point(361, 270);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(255, 42);
+            this.btnLogout.TabIndex = 9;
+            this.btnLogout.Text = "Đăng xuất";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnAbout_Click);
             // 
             // btnThoat
             // 
@@ -153,15 +158,36 @@
             this.btnKH.UseVisualStyleBackColor = true;
             this.btnKH.Click += new System.EventHandler(this.btnKH_Click);
             // 
+            // sttbar
+            // 
+            this.sttbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stt1});
+            this.sttbar.Location = new System.Drawing.Point(0, 384);
+            this.sttbar.Name = "sttbar";
+            this.sttbar.Size = new System.Drawing.Size(665, 22);
+            this.sttbar.TabIndex = 11;
+            this.sttbar.Text = "statusStrip1";
+            // 
+            // stt1
+            // 
+            this.stt1.Name = "stt1";
+            this.stt1.Size = new System.Drawing.Size(123, 17);
+            this.stt1.Text = "toolStripStatusLabel1";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 406);
+            this.Controls.Add(this.sttbar);
             this.Controls.Add(this.btnKH);
             this.Controls.Add(this.btnNV);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnAbout);
+            this.Controls.Add(this.btnLogout);
             this.Controls.Add(this.btnQD);
             this.Controls.Add(this.btnBC);
             this.Controls.Add(this.btnHD);
@@ -171,7 +197,11 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Khách Sạn";
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            this.sttbar.ResumeLayout(false);
+            this.sttbar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,9 +216,12 @@
         private System.Windows.Forms.Button btnHD;
         private System.Windows.Forms.Button btnBC;
         private System.Windows.Forms.Button btnQD;
-        private System.Windows.Forms.Button btnAbout;
+        private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Button btnNV;
         private System.Windows.Forms.Button btnKH;
+        private System.Windows.Forms.StatusStrip sttbar;
+        private System.Windows.Forms.ToolStripStatusLabel stt1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -34,6 +34,13 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.KH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiKH = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.DC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
@@ -42,13 +49,6 @@
             this.txtMa = new System.Windows.Forms.TextBox();
             this.dtThue = new System.Windows.Forms.DateTimePicker();
             this.cboPhong = new System.Windows.Forms.ComboBox();
-            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.KH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoaiKH = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.DC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             // 
             this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label1.Location = new System.Drawing.Point(-3, -2);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(755, 68);
@@ -107,6 +107,54 @@
             this.dataGridView1.Size = new System.Drawing.Size(703, 150);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView1_RowsAdded);
+            // 
+            // MaKH
+            // 
+            this.MaKH.HeaderText = "Mã KH";
+            this.MaKH.Name = "MaKH";
+            this.MaKH.ReadOnly = true;
+            this.MaKH.Width = 65;
+            // 
+            // KH
+            // 
+            this.KH.HeaderText = "Khách Hàng";
+            this.KH.Name = "KH";
+            // 
+            // LoaiKH
+            // 
+            this.LoaiKH.HeaderText = "Loại Khách";
+            this.LoaiKH.Items.AddRange(new object[] {
+            "Nội Địa",
+            "Nước Ngoài"});
+            this.LoaiKH.Name = "LoaiKH";
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "Giấy Tờ Tùy Thân";
+            this.ID.Name = "ID";
+            this.ID.Width = 120;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.HeaderText = "Giới Tính";
+            this.GioiTinh.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.GioiTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.GioiTinh.Width = 75;
+            // 
+            // DC
+            // 
+            this.DC.HeaderText = "Địa Chỉ";
+            this.DC.Name = "DC";
+            // 
+            // SoDT
+            // 
+            this.SoDT.HeaderText = "Số Điện Thoại";
+            this.SoDT.Name = "SoDT";
             // 
             // btnLuu
             // 
@@ -181,54 +229,6 @@
             this.cboPhong.Size = new System.Drawing.Size(144, 21);
             this.cboPhong.TabIndex = 15;
             // 
-            // MaKH
-            // 
-            this.MaKH.HeaderText = "Mã KH";
-            this.MaKH.Name = "MaKH";
-            this.MaKH.ReadOnly = true;
-            this.MaKH.Width = 65;
-            // 
-            // KH
-            // 
-            this.KH.HeaderText = "Khách Hàng";
-            this.KH.Name = "KH";
-            // 
-            // LoaiKH
-            // 
-            this.LoaiKH.HeaderText = "Loại Khách";
-            this.LoaiKH.Items.AddRange(new object[] {
-            "Nội Địa",
-            "Nước Ngoài"});
-            this.LoaiKH.Name = "LoaiKH";
-            // 
-            // ID
-            // 
-            this.ID.HeaderText = "Giấy Tờ Tùy Thân";
-            this.ID.Name = "ID";
-            this.ID.Width = 120;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.HeaderText = "Giới Tính";
-            this.GioiTinh.Items.AddRange(new object[] {
-            "Nam",
-            "Nữ",
-            "Khác"});
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.GioiTinh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.GioiTinh.Width = 75;
-            // 
-            // DC
-            // 
-            this.DC.HeaderText = "Địa Chỉ";
-            this.DC.Name = "DC";
-            // 
-            // SoDT
-            // 
-            this.SoDT.HeaderText = "Số Điện Thoại";
-            this.SoDT.Name = "SoDT";
-            // 
             // frmPhieuThuePhong
             // 
             this.AcceptButton = this.btnLuu;
@@ -252,7 +252,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmPhieuThuePhong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Lập Phiếu Thuê Phòng";
+            this.Text = "Quản Lý Khách Sạn";
             this.Load += new System.EventHandler(this.frmPhieuThuePhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

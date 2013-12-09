@@ -191,8 +191,8 @@ namespace CNPM
                 iHD += 1;
                 txtMaHD.Text = iHD.ToString();
             }
-            cboTenKH.SelectedIndex = 0;
-            cboTenNV.SelectedIndex = 0;
+            cboTenKH.SelectedIndex = -1;
+            cboTenNV.SelectedIndex = -1;
             txtTriGia.Text = "";       
             iSTT = 0;
             rownum = 0;
@@ -210,6 +210,15 @@ namespace CNPM
             {
                 hdDTO.MaKH = cboTenKH.SelectedValue.ToString();
                 txtDC.Text = HoaDonBUS.LayDiaChiKH(hdDTO);
+
+                int iDong = dataGridView1.Rows.Count;
+                if(hdDTO.MaKH != "")
+                for (int i = 0; i < iDong; i++)
+                {
+                    //Lấy loại khách
+                    hdDTO.MaLK = HoaDonBUS.LayLoaiKhach(hdDTO);
+                    dataGridView1.Rows[i].Cells[6].Value = HoaDonBUS.LayHeSo(hdDTO);
+                }
             }
         }
         #endregion
@@ -229,24 +238,25 @@ namespace CNPM
             for (int i = 0; i < iDong; i++)
             {
                 double dSLKH = Convert.ToDouble(dataGridView1.Rows[i].Cells[2].Value);
+
+                hdDTO.MaLP = Convert.ToString(dataGridView1.Rows[i].Cells[1].Value);
+                if (hdDTO.MaLP != null)
+                    hdDTO.MaLP = HoaDonBUS.LayLoaiPhong(hdDTO);
+                double dDonGia = Convert.ToDouble(HoaDonBUS.LayGiaVNPhong(hdDTO));
+                dataGridView1.Rows[i].Cells[4].Value = dDonGia.ToString();
+
                 if (dSLKH == 3)
-                    dataGridView1.Rows[i].Cells[5].Value = "25";
-                else if (dSLKH == 1)
-                    dataGridView1.Rows[i].Cells[6].Value = "1.5";
+                    dataGridView1.Rows[i].Cells[5].Value = HoaDonBUS.LayTyLePhuThuMax(hdDTO);
                 else
                 {
-                    dataGridView1.Rows[i].Cells[5].Value = "0";
-                    dataGridView1.Rows[i].Cells[6].Value = "1";
+                    dataGridView1.Rows[i].Cells[5].Value = HoaDonBUS.LayTyLePhuThuMin(hdDTO);
                 }
-                hdDTO.Tam = Convert.ToString(dataGridView1.Rows[i].Cells[1].Value);
-                if(hdDTO.Tam != null)
-                    hdDTO.Tam = HoaDonBUS.LayLoaiPhong(hdDTO);
-                dataGridView1.Rows[i].Cells[4].Value = HoaDonBUS.LayGiaVNPhong(hdDTO);
+                
                 if (dataGridView1.Rows[i].Cells[3].Value != null
                     && dataGridView1.Rows[i].Cells[4].Value != null)
                 {
                     double dSoNgayThue = Convert.ToDouble(dataGridView1.Rows[i].Cells[3].Value);
-                    double dDonGia = Convert.ToDouble(dataGridView1.Rows[i].Cells[4].Value);
+                    dDonGia = Convert.ToDouble(dataGridView1.Rows[i].Cells[4].Value);
                     double dPhuThu = Convert.ToDouble(dataGridView1.Rows[i].Cells[5].Value);
                     double dHeSo = Convert.ToDouble(dataGridView1.Rows[i].Cells[6].Value);
                     double dThanhTien = (dSoNgayThue * dDonGia + dDonGia * dPhuThu / 100) * dHeSo;
@@ -264,6 +274,18 @@ namespace CNPM
             iSTT += 1;
             dataGridView1.Rows[rownum].Cells[0].Value = iSTT;
             rownum += 1;
+
+            if (cboTenKH.SelectedIndex != -1)
+            {
+                int iDong = dataGridView1.Rows.Count;
+                if (hdDTO.MaKH != "")
+                    for (int i = 0; i < iDong; i++)
+                    {
+                        //Lấy loại khách
+                        hdDTO.MaLK = HoaDonBUS.LayLoaiKhach(hdDTO);
+                        dataGridView1.Rows[i].Cells[6].Value = HoaDonBUS.LayHeSo(hdDTO);
+                    }
+            }
         }
         #endregion
 

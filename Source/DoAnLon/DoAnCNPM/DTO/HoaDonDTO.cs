@@ -76,12 +76,19 @@ namespace DTO
             get { return _TriGia; }
             set { _TriGia = value; }
         }
-        private string _Tam;
+        private string _MaLP;
 
-        public string Tam
+        public string MaLP
         {
-            get { return _Tam; }
-            set { _Tam = value; }
+            get { return _MaLP; }
+            set { _MaLP = value; }
+        }
+        private string _MaLK;
+
+        public string MaLK
+        {
+            get { return _MaLK; }
+            set { _MaLK = value; }
         }
     }
 }

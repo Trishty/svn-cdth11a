@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmTraCuuPhong));
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnTim = new System.Windows.Forms.Button();
             this.dgrvDanhSachPhong = new System.Windows.Forms.DataGridView();
-            this.txtMaPhong = new System.Windows.Forms.TextBox();
-            this.lblMaPhong = new System.Windows.Forms.Label();
-            this.lblTraCuu = new System.Windows.Forms.Label();
             this.ColumnMaPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnLoaiPhong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnDonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ColumnTinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.txtMaPhong = new System.Windows.Forms.TextBox();
+            this.lblMaPhong = new System.Windows.Forms.Label();
+            this.lblTraCuu = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgrvDanhSachPhong)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,6 +79,30 @@
             this.dgrvDanhSachPhong.Size = new System.Drawing.Size(444, 75);
             this.dgrvDanhSachPhong.TabIndex = 8;
             // 
+            // ColumnMaPhong
+            // 
+            this.ColumnMaPhong.HeaderText = "Mã Phòng";
+            this.ColumnMaPhong.Name = "ColumnMaPhong";
+            this.ColumnMaPhong.ReadOnly = true;
+            // 
+            // ColumnLoaiPhong
+            // 
+            this.ColumnLoaiPhong.HeaderText = "Loại Phòng";
+            this.ColumnLoaiPhong.Name = "ColumnLoaiPhong";
+            this.ColumnLoaiPhong.ReadOnly = true;
+            // 
+            // ColumnDonGia
+            // 
+            this.ColumnDonGia.HeaderText = "Đơn Giá";
+            this.ColumnDonGia.Name = "ColumnDonGia";
+            this.ColumnDonGia.ReadOnly = true;
+            // 
+            // ColumnTinhTrang
+            // 
+            this.ColumnTinhTrang.HeaderText = "Tình Trạng";
+            this.ColumnTinhTrang.Name = "ColumnTinhTrang";
+            this.ColumnTinhTrang.ReadOnly = true;
+            // 
             // txtMaPhong
             // 
             this.txtMaPhong.Location = new System.Drawing.Point(132, 59);
@@ -105,30 +130,6 @@
             this.lblTraCuu.TabIndex = 5;
             this.lblTraCuu.Text = "TRA CỨU DANH SÁCH PHÒNG";
             // 
-            // ColumnMaPhong
-            // 
-            this.ColumnMaPhong.HeaderText = "Mã Phòng";
-            this.ColumnMaPhong.Name = "ColumnMaPhong";
-            this.ColumnMaPhong.ReadOnly = true;
-            // 
-            // ColumnLoaiPhong
-            // 
-            this.ColumnLoaiPhong.HeaderText = "Loại Phòng";
-            this.ColumnLoaiPhong.Name = "ColumnLoaiPhong";
-            this.ColumnLoaiPhong.ReadOnly = true;
-            // 
-            // ColumnDonGia
-            // 
-            this.ColumnDonGia.HeaderText = "Đơn Giá";
-            this.ColumnDonGia.Name = "ColumnDonGia";
-            this.ColumnDonGia.ReadOnly = true;
-            // 
-            // ColumnTinhTrang
-            // 
-            this.ColumnTinhTrang.HeaderText = "Tình Trạng";
-            this.ColumnTinhTrang.Name = "ColumnTinhTrang";
-            this.ColumnTinhTrang.ReadOnly = true;
-            // 
             // frmTraCuuPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -140,8 +141,9 @@
             this.Controls.Add(this.txtMaPhong);
             this.Controls.Add(this.lblMaPhong);
             this.Controls.Add(this.lblTraCuu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTraCuuPhong";
-            this.Text = "frmTraCuuPhong";
+            this.Text = "Quản Lý Khách Sạn";
             ((System.ComponentModel.ISupportInitialize)(this.dgrvDanhSachPhong)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

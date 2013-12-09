@@ -12,56 +12,67 @@ namespace BUS
     {
         public static bool ThemHD(HoaDonDTO hdDTO)
         {
-            //kiem tra du lieu truoc khi them
             return HoaDonDAO.ThemHD(hdDTO);
         }
 
         public static bool ThemCT(HoaDonDTO hdDTO)
         {
-            //kiem tra du lieu truoc khi them
             return HoaDonDAO.ThemCT(hdDTO);
         }
 
         public static string LayMaHDTuDong(HoaDonDTO hdDTO)
         {
-            //kiem tra du lieu truoc khi them
             return HoaDonDAO.LayMaHDTuDong(hdDTO);
         }
 
         public static DataSet LayDanhSachKH(HoaDonDTO hdDTO)
         {
-            //kiem tra du lieu truoc khi them
             return HoaDonDAO.LayDanhSachKH(hdDTO);
         }
 
         public static DataSet LayDanhSachNV(HoaDonDTO hdDTO)
         {
-            //kiem tra du lieu truoc khi them
             return HoaDonDAO.LayDanhSachNV(hdDTO);
         }
 
         public static string LayDiaChiKH(HoaDonDTO hdDTO)
         {
-            //kiem tra du lieu truoc khi them
             return HoaDonDAO.LayDiaChiKH(hdDTO);
         }
 
         public static DataSet LayDanhSachPhong(HoaDonDTO hdDTO)
         {
-            //kiem tra du lieu truoc khi them
             return HoaDonDAO.LayDanhSachPhong(hdDTO);
         }
 
         public static string LayLoaiPhong(HoaDonDTO hdDTO)
         {
-            //kiem tra du lieu truoc khi them
             return HoaDonDAO.LayLoaiPhong(hdDTO);
+        }
+
+        public static string LayLoaiKhach(HoaDonDTO hdDTO)
+        {
+            return HoaDonDAO.LayLoaiKhach(hdDTO);
         }
 
         public static string LayGiaVNPhong(HoaDonDTO hdDTO)
         {
-            //kiem tra du lieu truoc khi them
             return HoaDonDAO.LayGiaVNPhong(hdDTO);
+        }
+
+        public static string LayHeSo(HoaDonDTO hdDTO)
+        {
+            return HoaDonDAO.LayHeSo(hdDTO);
+        }
+
+        public static string LayTyLePhuThuMax(HoaDonDTO hdDTO)
+        {
+            return HoaDonDAO.LayTyLePhuThuMax(hdDTO);
+        }
+
+        public static string LayTyLePhuThuMin(HoaDonDTO hdDTO)
+        {
+            return HoaDonDAO.LayTyLePhuThuMin(hdDTO);
         }
     }
 }

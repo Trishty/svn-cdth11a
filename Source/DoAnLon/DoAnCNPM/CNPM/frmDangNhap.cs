@@ -18,7 +18,19 @@ namespace CNPM
         
         private void frmDangNhap_Load(object sender, EventArgs e)
         {
-            SqlConnection con = DataProvider.ConnectionString();
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmMain main = new frmMain();
+            main.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
