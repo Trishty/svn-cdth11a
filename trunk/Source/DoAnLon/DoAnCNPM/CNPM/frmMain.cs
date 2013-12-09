@@ -15,6 +15,17 @@ namespace CNPM
             InitializeComponent();
         }
 
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            timer1.Enabled = true;
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            stt1.Text = DateTime.Now.ToString();
+        }
+
         #region Lập danh mục
         private void btnDM_Click(object sender, EventArgs e)
         {
@@ -50,8 +61,8 @@ namespace CNPM
         #region Quản lý khách hàng
         private void btnKH_Click(object sender, EventArgs e)
         {
-            frmQuanLyNhanVien KH = new frmQuanLyNhanVien();
-            KH.ShowDialog();
+            //frmQuanLyKhachHang KH = new frmQuanLyKhachHang();
+            //KH.ShowDialog();
         }
         #endregion
 
@@ -79,13 +90,19 @@ namespace CNPM
         }
         #endregion
 
-        #region About
+        #region Logout
         private void btnAbout_Click(object sender, EventArgs e)
         {
-            DialogResult About = new DialogResult();
-            string strAbout = "Phần mềm quản lý khách sạn";
-            strAbout += "\n\nNhóm 4 - Lớp CĐTH11A";
-            About = MessageBox.Show(strAbout, "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult Logout = new DialogResult();
+            string strLogout = "Bạn muốn đăng xuất?";
+            Logout = MessageBox.Show(strLogout, "Quản Lý Khách Sạn", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (Logout == DialogResult.Yes)
+            {
+                frmDangNhap DN = new frmDangNhap();
+                DN.Show();
+                this.Hide();
+                this.Dispose();
+            }
         }
         #endregion
 
@@ -93,7 +110,7 @@ namespace CNPM
         private void btnThoat_Click(object sender, EventArgs e)
         {
             DialogResult Thoat = new DialogResult(); ;
-            Thoat = MessageBox.Show("Bạn muốn thoát chương trình", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            Thoat = MessageBox.Show("Bạn muốn thoát chương trình?", "Thông Báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (Thoat == DialogResult.Yes)
             {
                 Application.Exit();

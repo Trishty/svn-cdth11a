@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmThayDoiCacQuyDinh));
             this.button10 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.lblLapBaoCao_1 = new System.Windows.Forms.Label();
@@ -313,8 +314,9 @@
             this.Controls.Add(this.button8);
             this.Controls.Add(this.lblLapBaoCao_1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmThayDoiCacQuyDinh";
-            this.Text = "frmThayDoiCacQuyDinh";
+            this.Text = "Quản Lý Khách Sạn";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
