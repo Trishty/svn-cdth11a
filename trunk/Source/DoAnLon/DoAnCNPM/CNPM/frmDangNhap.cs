@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace CNPM
 {
@@ -13,6 +14,11 @@ namespace CNPM
         public frmDangNhap()
         {
             InitializeComponent();
+        }
+        
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
         }
     }
 }
