@@ -1,10 +1,5 @@
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DTO\bin\Debug\DTO.dll
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DTO\bin\Debug\DTO.pdb
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DTO\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DTO\obj\Debug\DTO.dll
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DTO\obj\Debug\DTO.pdb
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DTO\bin\Debug\DTO.dll
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DTO\bin\Debug\DTO.pdb
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DTO\obj\Debug\ResolveAssemblyReference.cache
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DTO\obj\Debug\DTO.dll
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DTO\obj\Debug\DTO.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DTO\bin\Debug\DTO.dll
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DTO\bin\Debug\DTO.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DTO\obj\Debug\ResolveAssemblyReference.cache
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DTO\obj\Debug\DTO.dll
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DTO\obj\Debug\DTO.pdb

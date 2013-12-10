@@ -33,6 +33,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LapBaoCaoDoanhThuDTO.cs" />
     <Compile Include="NhanVienDTO.cs" />
     <Compile Include="PhieuThueDTO.cs" />
     <Compile Include="HoaDonDTO.cs" />
