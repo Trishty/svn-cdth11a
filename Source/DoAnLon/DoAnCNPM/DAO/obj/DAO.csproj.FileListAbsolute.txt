@@ -1,14 +1,7 @@
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\bin\Debug\DAO.dll
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\bin\Debug\DAO.pdb
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\bin\Debug\DTO.dll
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\bin\Debug\DTO.pdb
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\obj\Debug\DAO.dll
-C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\obj\Debug\DAO.pdb
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DAO\obj\Debug\ResolveAssemblyReference.cache
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DAO\obj\Debug\DAO.dll
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DAO\obj\Debug\DAO.pdb
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DAO\bin\Debug\DAO.dll
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DAO\bin\Debug\DAO.pdb
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DAO\bin\Debug\DTO.dll
-E:\Cong Nghe Phan Mem\Do An Quan Ly Khach San\DoAnCNPM\DAO\bin\Debug\DTO.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DAO\bin\Debug\DAO.dll
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DAO\bin\Debug\DAO.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DAO\bin\Debug\DTO.dll
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DAO\bin\Debug\DTO.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DAO\obj\Debug\ResolveAssemblyReference.cache
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DAO\obj\Debug\DAO.dll
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\DAO\obj\Debug\DAO.pdb
