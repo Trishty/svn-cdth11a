@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -6,6 +6,8 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using DTO;
+using BUS;
 
 namespace CNPM
 {
@@ -15,22 +17,86 @@ namespace CNPM
         {
             InitializeComponent();
         }
-        
-        private void frmDangNhap_Load(object sender, EventArgs e)
+        #region button đăng nhập
+        private void btnDangNhap_Click(object sender, EventArgs e)
         {
+            if ("".Equals(txtTen.Text.Trim()) && "".Equals(txtMatKhau.Text.Trim()))
+            {
+                MessageBox.Show("Chưa nhập thông tin đăng nhập!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtTen.Focus();
+                txtTen.BackColor = Color.Red;
+                txtMatKhau.BackColor = Color.Red;
+            }
+            else if ("".Equals(txtTen.Text.Trim()))
+            {
+                MessageBox.Show("Chưa nhập tên người dùng!","Thông báo", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+                txtTen.Focus();
+                txtTen.BackColor = Color.Red;
+            }
+            else if ("".Equals(txtMatKhau.Text.Trim()))
+            {
+                MessageBox.Show("Chưa nhập mật khẩu!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtMatKhau.Focus();
+                txtMatKhau.BackColor = Color.Red;
+            }
+            else 
+            {
+                DangNhapDTO dn = new DangNhapDTO();
+                dn.TenDN = txtTen.Text.Trim();
+                dn.MatKhau = txtMatKhau.Text.Trim();
+                int iKiemTraDN = 0;
+                iKiemTraDN = int.Parse(DangNhapBUS.bKiemTraDanhNhap(dn));
+                if (iKiemTraDN == 0)
+                {
+                    MessageBox.Show("Tài khoản hoặc mật khẩu không đúng!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    txtTen.Focus();
+                }
+                else
+                {
+                    frmMain fm = new frmMain();
+                    fm.Show();
+                    this.Hide();
+                }
+            
+            }
+        }
+        #endregion
 
+        #region xử lý nút enter esc
+        private void frmDangNhap_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btnDangNhap_Click(sender, e);
+            }
+            else if (e.KeyCode == Keys.Escape)
+            {
+                btnThoat_Click(sender, e);
+            }
+        }
+        #endregion
+
+        #region button thoát
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            DialogResult dlms = MessageBox.Show("Bạn muốn thoát chương trình?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dlms == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+        #endregion
+
+        #region gán màu trắng cho textbox
+        private void txtTen_TextChanged(object sender, EventArgs e)
+        {
+            txtTen.BackColor = Color.White;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void txtMatKhau_TextChanged(object sender, EventArgs e)
         {
-            frmMain main = new frmMain();
-            main.Show();
-            this.Hide();
+            txtMatKhau.BackColor = Color.White;
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
+        #endregion
     }
 }
