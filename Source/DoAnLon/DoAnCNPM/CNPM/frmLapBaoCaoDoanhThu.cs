@@ -388,7 +388,7 @@ namespace CNPM
                     iDoanhThuVN = iSoNgay * iDonGiaVN;
                     dDoanhThuNN = (double)iSoNgay * fDonGiaNN;
                     float fTiLeDT = (float)iTiLeDT / 100;
-                    if (LapBaoCaoDoanhThuBUS.bThemDoanhThu(iMaDT, iDoanhThuVN, dDoanhThuNN, fTiLeDT, iMaLP, iThang));
+                    if (LapBaoCaoDoanhThuBUS.bThemDoanhThu(iMaDT, iDoanhThuVN, dDoanhThuNN, fTiLeDT, iMaLP, iThang))
                     {
                         iDem++;
                     }

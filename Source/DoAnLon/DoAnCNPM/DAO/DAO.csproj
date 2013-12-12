@@ -40,6 +40,7 @@
     <Compile Include="PhieuThueDAO.cs" />
     <Compile Include="HoaDonDAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThayDoiQuyDinhDAO.cs" />
     <Compile Include="TraCuuPhongDAO.cs" />
   </ItemGroup>
   <ItemGroup>

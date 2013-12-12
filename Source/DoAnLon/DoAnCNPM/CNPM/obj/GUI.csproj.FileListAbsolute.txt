@@ -20,3 +20,4 @@ D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\GUI.csproj.GenerateResource.Cache
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuyDinh.resources
