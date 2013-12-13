@@ -12,3 +12,10 @@ C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\DAO\bin\Debug\DTO.pdb
 C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\DAO\obj\Debug\ResolveAssemblyReference.cache
 C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\DAO\obj\Debug\DAO.dll
 C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\DAO\obj\Debug\DAO.pdb
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\bin\Debug\DAO.dll
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\bin\Debug\DAO.pdb
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\bin\Debug\DTO.dll
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\bin\Debug\DTO.pdb
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\obj\Debug\DAO.dll
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\DAO\obj\Debug\DAO.pdb
