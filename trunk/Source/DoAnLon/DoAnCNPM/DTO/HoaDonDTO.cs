@@ -27,13 +27,7 @@ namespace DTO
             get { return _TenDN; }
             set { _TenDN = value; }
         }
-        private string _DCKH;
 
-        public string DCKH
-        {
-            get { return _DCKH; }
-            set { _DCKH = value; }
-        }
         private string _NgayLap;
 
         public string NgayLap
@@ -89,6 +83,14 @@ namespace DTO
         {
             get { return _MaLK; }
             set { _MaLK = value; }
+        }
+
+        private string _TrangThai;
+
+        public string TrangThai
+        {
+            get { return _TrangThai; }
+            set { _TrangThai = value; }
         }
     }
 }

@@ -20,9 +20,19 @@ namespace BUS
             return HoaDonDAO.ThemCT(hdDTO);
         }
 
+        public static bool XoaHD(HoaDonDTO hdDTO)
+        {
+            return HoaDonDAO.XoaHD(hdDTO);
+        }
+
         public static string LayMaHDTuDong(HoaDonDTO hdDTO)
         {
             return HoaDonDAO.LayMaHDTuDong(hdDTO);
+        }
+
+        public static DataSet LayDanhSachHD(HoaDonDTO hdDTO)
+        {
+            return HoaDonDAO.LayDanhSachHD(hdDTO);
         }
 
         public static DataSet LayDanhSachKH(HoaDonDTO hdDTO)
@@ -33,11 +43,6 @@ namespace BUS
         public static DataSet LayDanhSachNV(HoaDonDTO hdDTO)
         {
             return HoaDonDAO.LayDanhSachNV(hdDTO);
-        }
-
-        public static string LayDiaChiKH(HoaDonDTO hdDTO)
-        {
-            return HoaDonDAO.LayDiaChiKH(hdDTO);
         }
 
         public static DataSet LayDanhSachPhong(HoaDonDTO hdDTO)
@@ -73,6 +78,21 @@ namespace BUS
         public static string LayTyLePhuThuMin(HoaDonDTO hdDTO)
         {
             return HoaDonDAO.LayTyLePhuThuMin(hdDTO);
+        }
+
+        public static DataSet LayThongTinHoaDon(HoaDonDTO hdDTO)
+        {
+            return HoaDonDAO.LayThongTinHoaDon(hdDTO);
+        }
+
+        public static string LayTenKhachHang(HoaDonDTO hdDTO)
+        {
+            return HoaDonDAO.LayTenKhachHang(hdDTO);
+        }
+
+        public static string LayTenNhanVien(HoaDonDTO hdDTO)
+        {
+            return HoaDonDAO.LayTenNhanVien(hdDTO);
         }
     }
 }

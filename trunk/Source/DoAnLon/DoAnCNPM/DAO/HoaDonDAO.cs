@@ -29,6 +29,15 @@ namespace DAO
             return DataProvider.ExecuteNonQuery(strsql, con);
         }
 
+        public static bool XoaHD(HoaDonDTO hdDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "update HoaDonThanhToan set"
+            + " TrangThai = '" + hdDTO.TrangThai
+            + "' where MaHD = " + hdDTO.MaHD;
+            return DataProvider.ExecuteNonQuery(strsql, con);
+        }
+
         public static string LayMaHDTuDong(HoaDonDTO hdDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
@@ -36,33 +45,32 @@ namespace DAO
             return DataProvider.ExecuteScalar(strsql, con);
         }
 
+        public static DataSet LayDanhSachHD(HoaDonDTO hdDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "Select * from HoaDonThanhToan";
+            return DataProvider.GetDataSet(strsql, con);
+        }
+
         public static DataSet LayDanhSachKH(HoaDonDTO hdDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
-            string strTenBang = "Select * from KhachHang";
-            return DataProvider.GetDataSet(strTenBang, con);
+            string strsql = "Select * from KhachHang";
+            return DataProvider.GetDataSet(strsql, con);
         }
 
         public static DataSet LayDanhSachNV(HoaDonDTO hdDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
-            string strTenBang = "Select * from NhanVien";
-            return DataProvider.GetDataSet(strTenBang, con);
-        }
-
-        public static string LayDiaChiKH(HoaDonDTO hdDTO)
-        {
-            SqlConnection con = DataProvider.ConnectionString();
-            string strsql = "select DiaChi from KhachHang where MaKH = "
-                +hdDTO.MaKH;
-            return DataProvider.ExecuteScalar(strsql, con);
+            string strsql = "Select * from NhanVien";
+            return DataProvider.GetDataSet(strsql, con);
         }
 
         public static DataSet LayDanhSachPhong(HoaDonDTO hdDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
-            string strTenBang = "Select * from Phong";
-            return DataProvider.GetDataSet(strTenBang, con);
+            string strsql = "Select * from Phong";
+            return DataProvider.GetDataSet(strsql, con);
         }
 
         public static string LayLoaiPhong(HoaDonDTO hdDTO)
@@ -110,6 +118,30 @@ namespace DAO
             SqlConnection con = DataProvider.ConnectionString();
             string strsql = "select TyLePhuThuMin from LoaiPhong where MaLP = "
                 + hdDTO.MaLP;
+            return DataProvider.ExecuteScalar(strsql, con);
+        }
+
+        public static DataSet LayThongTinHoaDon(HoaDonDTO hdDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "select * from HoaDonThanhToan where MaHD = "
+                + hdDTO.MaHD;
+            return DataProvider.GetDataSet(strsql, con);
+        }
+
+        public static string LayTenKhachHang(HoaDonDTO hdDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "select TenKH from KhachHang where MaKH = "
+                + hdDTO.MaKH;
+            return DataProvider.ExecuteScalar(strsql, con);
+        }
+
+        public static string LayTenNhanVien(HoaDonDTO hdDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "select TenNV from NhanVien where TenDN = '"
+                + hdDTO.TenDN + "'";
             return DataProvider.ExecuteScalar(strsql, con);
         }
     }
