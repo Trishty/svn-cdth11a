@@ -21,6 +21,7 @@ namespace CNPM
         int iSTT = 0;
         int rownum = 0;
         int iFlag = 0;
+        Boolean bHoaDon = false;
         HoaDonDTO hdDTO = new HoaDonDTO();
         #endregion
 
@@ -44,16 +45,17 @@ namespace CNPM
             DisableControl();
             btnTinh.Enabled = false;
             btnLuu.Enabled = false;
+            CBOtoDDL();
         }
         #endregion
 
         #region Tắt control
         private void DisableControl()
         {
-            txtMaHD.Enabled = false;
+            //txtMaHD.Enabled = false;
+            cboMaHD.Enabled = false;
             cboTenKH.Enabled = false;
             cboTenNV.Enabled = false;
-            txtDC.Enabled = false;
             dtLap.Enabled = false;
             dataGridView1.Enabled = false;
             txtTriGia.Enabled = false;
@@ -66,6 +68,15 @@ namespace CNPM
             cboTenKH.Enabled = true;
             cboTenNV.Enabled = true;
             dataGridView1.Enabled = true;
+        }
+        #endregion
+
+        #region CBOtoDDL
+        private void CBOtoDDL()
+        {
+            cboMaHD.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboTenKH.DropDownStyle = ComboBoxStyle.DropDownList;
+            cboTenNV.DropDownStyle = ComboBoxStyle.DropDownList;
         }
         #endregion
 
@@ -131,18 +142,17 @@ namespace CNPM
         #region Lưu
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            //Thông tin hoá đơn
+            //hdDTO.MaHD = txtMaHD.Text;
+            hdDTO.MaHD = cboMaHD.SelectedValue.ToString();
+            hdDTO.MaKH = cboTenKH.SelectedValue.ToString();
+            hdDTO.TenDN = cboTenNV.SelectedValue.ToString();
+            hdDTO.NgayLap = dtLap.Text;
+            hdDTO.TriGia = txtTriGia.Text;
+
             if (iFlag == 1)
             {
                 //Thêm hoá đơn
-
-                //Thông tin hoá đơn
-                hdDTO.MaHD = txtMaHD.Text;
-                hdDTO.MaKH = cboTenKH.SelectedValue.ToString();
-                hdDTO.TenDN = cboTenNV.SelectedValue.ToString();
-                hdDTO.DCKH = txtDC.Text;
-                hdDTO.NgayLap = dtLap.Text;
-                hdDTO.TriGia = txtTriGia.Text;
-
                 if (HoaDonBUS.ThemHD(hdDTO) == true)
                 {
                     //Thông tin chi tiết hoá đơn
@@ -174,13 +184,28 @@ namespace CNPM
                     MessageBox.Show("Lập hoá đơn thất bại!");
                 }
             }
+
+            else if (iFlag == 2)
+            {
+                hdDTO.TrangThai = "False";
+                if (HoaDonBUS.XoaHD(hdDTO) == true)
+                {
+                    MessageBox.Show("Xóa hoá đơn thành công!");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa hoá đơn thất bại!");
+                }
+            }
+
+            iFlag = 0;
             btnHuy.Enabled = true;
             btnTinh.Enabled = false;
             btnLuu.Enabled = false;
         }
         #endregion
 
-        #region Huỷ
+        #region Làm mới
         private void btnHuy_Click(object sender, EventArgs e)
         {
             iFlag = 1;
@@ -189,27 +214,31 @@ namespace CNPM
             {
                 int iHD = Convert.ToInt32(hdDTO.MaHD);
                 iHD += 1;
-                txtMaHD.Text = iHD.ToString();
+                //txtMaHD.Text = iHD.ToString();
+                cboMaHD.DataSource = null;
+                cboMaHD.Items.Clear();
+                cboMaHD.Items.Add(iHD.ToString());
+                cboMaHD.SelectedIndex = 0;
+                cboMaHD.Enabled = false;
             }
             cboTenKH.SelectedIndex = -1;
             cboTenNV.SelectedIndex = -1;
+            dtLap.Text = DateTime.Now.ToShortDateString();
             txtTriGia.Text = "";       
             iSTT = 0;
             rownum = 0;
             CreateDataGridView();
             EnableControl();
-            btnHuy.Enabled = false;
             btnTinh.Enabled = true;
         }
         #endregion
 
-        #region Lấy địa chỉ
+        #region Lấy hệ số
         private void cboTenKH_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cboTenKH.SelectedIndex != -1)
+            if (cboTenKH.SelectedIndex != -1 && iFlag != 2)
             {
                 hdDTO.MaKH = cboTenKH.SelectedValue.ToString();
-                txtDC.Text = HoaDonBUS.LayDiaChiKH(hdDTO);
 
                 int iDong = dataGridView1.Rows.Count;
                 if(hdDTO.MaKH != "")
@@ -302,6 +331,45 @@ namespace CNPM
             }
             btnLuu.Enabled = true;
             btnTinh.Enabled = false;
+        }
+        #endregion
+
+        #region Xóa
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            iFlag = 2;
+            DisableControl();
+            DataSet dsDSHD = new DataSet();
+            dsDSHD = HoaDonBUS.LayDanhSachHD(hdDTO);
+            //Nạp danh sách Mã Hóa Đơn
+            cboMaHD.DataSource = dsDSHD.Tables[0];
+            cboMaHD.DisplayMember = "MaHD";
+            cboMaHD.ValueMember = "MaHD";
+            cboMaHD.SelectedIndex = -1;
+            cboMaHD.Enabled = true;
+            bHoaDon = true;
+            btnLuu.Enabled = true;
+        }
+        #endregion
+
+        #region Lấy thông tin HD
+        private void cboMaHD_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboMaHD.SelectedIndex != -1 && iFlag != 1 && bHoaDon)
+            {
+                hdDTO.MaHD = cboMaHD.SelectedValue.ToString();
+                DataSet dsDSHD = new DataSet();
+                dsDSHD = HoaDonBUS.LayThongTinHoaDon(hdDTO);
+                string strMaKH = dsDSHD.Tables[0].Rows[0]["MaKH"].ToString();
+                string strMaNV = dsDSHD.Tables[0].Rows[0]["TenDN"].ToString();
+                string strNgayLap = dsDSHD.Tables[0].Rows[0]["NgayLapHoaDon"].ToString();
+
+                hdDTO.MaKH = strMaKH;
+                cboTenKH.Text = HoaDonBUS.LayTenKhachHang(hdDTO).ToString();
+                hdDTO.TenDN = strMaNV;
+                cboTenNV.Text = HoaDonBUS.LayTenNhanVien(hdDTO).ToString();
+                dtLap.Text = strNgayLap;
+            }
         }
         #endregion
     }

@@ -49,6 +49,7 @@
             this.txtMa = new System.Windows.Forms.TextBox();
             this.dtThue = new System.Windows.Forms.DateTimePicker();
             this.cboPhong = new System.Windows.Forms.ComboBox();
+            this.btnXoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +68,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(248, 90);
+            this.label2.Location = new System.Drawing.Point(252, 77);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 13);
             this.label2.TabIndex = 9;
@@ -76,7 +77,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(248, 116);
+            this.label3.Location = new System.Drawing.Point(252, 103);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 10;
@@ -85,7 +86,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(248, 142);
+            this.label4.Location = new System.Drawing.Point(252, 129);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(89, 13);
             this.label4.TabIndex = 11;
@@ -102,7 +103,7 @@
             this.GioiTinh,
             this.DC,
             this.SoDT});
-            this.dataGridView1.Location = new System.Drawing.Point(22, 202);
+            this.dataGridView1.Location = new System.Drawing.Point(23, 202);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(703, 150);
             this.dataGridView1.TabIndex = 4;
@@ -158,7 +159,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(349, 372);
+            this.btnLuu.Location = new System.Drawing.Point(403, 372);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 5;
@@ -168,7 +169,7 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(215, 372);
+            this.btnHuy.Location = new System.Drawing.Point(135, 372);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 23);
             this.btnHuy.TabIndex = 6;
@@ -179,7 +180,7 @@
             // btnThoat
             // 
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnThoat.Location = new System.Drawing.Point(479, 372);
+            this.btnThoat.Location = new System.Drawing.Point(537, 372);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 7;
@@ -190,7 +191,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(248, 169);
+            this.label5.Location = new System.Drawing.Point(252, 156);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(80, 13);
             this.label5.TabIndex = 12;
@@ -199,7 +200,7 @@
             // dtTra
             // 
             this.dtTra.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtTra.Location = new System.Drawing.Point(350, 166);
+            this.dtTra.Location = new System.Drawing.Point(354, 153);
             this.dtTra.Name = "dtTra";
             this.dtTra.Size = new System.Drawing.Size(143, 20);
             this.dtTra.TabIndex = 3;
@@ -207,7 +208,7 @@
             // txtMa
             // 
             this.txtMa.Enabled = false;
-            this.txtMa.Location = new System.Drawing.Point(350, 87);
+            this.txtMa.Location = new System.Drawing.Point(354, 74);
             this.txtMa.Name = "txtMa";
             this.txtMa.Size = new System.Drawing.Size(143, 20);
             this.txtMa.TabIndex = 13;
@@ -216,7 +217,7 @@
             // 
             this.dtThue.Enabled = false;
             this.dtThue.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtThue.Location = new System.Drawing.Point(350, 139);
+            this.dtThue.Location = new System.Drawing.Point(354, 126);
             this.dtThue.Name = "dtThue";
             this.dtThue.Size = new System.Drawing.Size(143, 20);
             this.dtThue.TabIndex = 14;
@@ -224,10 +225,19 @@
             // cboPhong
             // 
             this.cboPhong.FormattingEnabled = true;
-            this.cboPhong.Location = new System.Drawing.Point(349, 113);
+            this.cboPhong.Location = new System.Drawing.Point(353, 100);
             this.cboPhong.Name = "cboPhong";
             this.cboPhong.Size = new System.Drawing.Size(144, 21);
             this.cboPhong.TabIndex = 15;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(269, 372);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(75, 23);
+            this.btnXoa.TabIndex = 16;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
             // 
             // frmPhieuThuePhong
             // 
@@ -236,6 +246,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(749, 416);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.cboPhong);
             this.Controls.Add(this.dtThue);
             this.Controls.Add(this.txtMa);
@@ -282,5 +293,6 @@
         private System.Windows.Forms.DataGridViewComboBoxColumn GioiTinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn DC;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoDT;
+        private System.Windows.Forms.Button btnXoa;
     }
 }
