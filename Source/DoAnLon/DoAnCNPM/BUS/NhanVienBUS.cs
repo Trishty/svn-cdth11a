@@ -18,5 +18,15 @@ namespace BUS
         {
             return NhanVienDAO.ThemNhanVien(NV_DTO);
         }
+
+        public static bool XoaNhanVien(NhanVienDTO NV_DTO)
+        {
+            return NhanVienDAO.XoaNhanVien(NV_DTO);
+        }
+
+        public static bool SuaNhanVien(NhanVienDTO NV_DTO)
+        {
+            return NhanVienDAO.SuaNhanVien(NV_DTO);
+        }
     }
 }

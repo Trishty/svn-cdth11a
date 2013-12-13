@@ -21,3 +21,26 @@ D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\GUI.csproj.GenerateResour
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuyDinh.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\BUS.dll
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\DTO.dll
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.dll
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\BUS.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\DTO.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDangNhap.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDanhMucPhong.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmHoaDon.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmLapBaoCaoDoanhThu.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmMain.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyNhanVien.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuyDinh.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmThayDoiCacQuyDinh.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\GUI.csproj.GenerateResource.Cache
