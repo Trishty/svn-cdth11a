@@ -7,3 +7,12 @@ D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\BUS\bin\Debug\DAO.pdb
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\BUS\obj\Debug\ResolveAssemblyReference.cache
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\BUS\obj\Debug\BUS.dll
 D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\BUS\obj\Debug\BUS.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\BUS\bin\Debug\BUS.dll
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\BUS\bin\Debug\BUS.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\BUS\bin\Debug\DAO.dll
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\BUS\bin\Debug\DTO.dll
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\BUS\bin\Debug\DTO.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\BUS\bin\Debug\DAO.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\BUS\obj\Debug\BUS.dll
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\BUS\obj\Debug\BUS.pdb

@@ -24,11 +24,34 @@ namespace DAO
             + NV_DTO.StrTenDangNhap + "','"
             + NV_DTO.StrMatKhau + "','"
             + NV_DTO.StrHoTen + "','"
-            + NV_DTO.StrChucVu + "','"
             + NV_DTO.StrDiaChi + "','"
             + NV_DTO.StrDienThoai + "','"
             + NV_DTO.StrCMND + "')";
 
+            return DataProvider.ExecuteNonQuery(strSQL, con);
+        }
+
+        public static bool XoaNhanVien(NhanVienDTO NV_DTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+
+            string strSQL = "delete from nhanvien where tendn = '" + NV_DTO.StrTenDangNhap.ToString() + "'";
+
+            return DataProvider.ExecuteNonQuery(strSQL, con);
+        }
+
+        public static bool SuaNhanVien(NhanVienDTO NV_DTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+
+            string strSQL = "update NhanVien set MatKhau = '"
+            + NV_DTO.StrMatKhau + "', TenNV = N'"
+            + NV_DTO.StrHoTen + "', DiaChi = N'"
+            + NV_DTO.StrDiaChi + "', DienThoai = '"
+            + NV_DTO.StrDienThoai + "', CMND = '"
+            + NV_DTO.StrCMND + "' where TenDN = '"
+            + NV_DTO.StrTenDangNhap + "'";
+            
             return DataProvider.ExecuteNonQuery(strSQL, con);
         }
     }
