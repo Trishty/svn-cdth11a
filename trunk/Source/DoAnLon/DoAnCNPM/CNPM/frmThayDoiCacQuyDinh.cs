@@ -16,18 +16,22 @@ namespace CNPM
         {
             InitializeComponent();
         }
-        //
+        #region khai báo biến
         public static int p_iViTri = 0;
         public static string p_strText = null;
         public static string p_strGiaTri = null;
         ThayDoiQuyDinhDTO tdqd = new ThayDoiQuyDinhDTO();
-        //
+        #endregion
+
+        #region form load
         private void frmThayDoiCacQuyDinh_Load(object sender, EventArgs e)
         {
             LoadCombobox();
             AnAll();
         }
-        
+        #endregion
+
+        #region load các combobex
         private void LoadCombobox()
         {
             //
@@ -68,7 +72,9 @@ namespace CNPM
                 cbbHeSoLoaiKhach.Items.Add(strDisplay);
             }
         }
+        #endregion
 
+        #region cbbSoLuongPhong_SelectedIndexChanged
         private void cbbSoLuongPhong_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbbSoLuongPhong.SelectedIndex != -1)
@@ -82,8 +88,9 @@ namespace CNPM
                 btnSoLuongLoaiPhong.Enabled = true;
             }
         }
+        #endregion
 
-
+        #region cbbDonGiaLPVN_SelectedIndexChanged
         private void cbbDonGiaLPVN_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbbDonGiaLPVN.SelectedIndex != -1)
@@ -98,7 +105,9 @@ namespace CNPM
             }
 
         }
+        #endregion
 
+        #region cbbDonGiaLPNN_SelectedIndexChanged
         private void cbbDonGiaLPNN_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbbDonGiaLPNN.SelectedIndex != -1)
@@ -112,7 +121,9 @@ namespace CNPM
                 cbbTiLePhuThu.SelectedIndex = -1;
             }
         }
+        #endregion
 
+        #region cbbHeSoLoaiKhach_SelectedIndexChanged
         private void cbbHeSoLoaiKhach_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbbHeSoLoaiKhach.SelectedIndex != -1)
@@ -126,7 +137,9 @@ namespace CNPM
                 cbbTiLePhuThu.SelectedIndex = -1;
             }
         }
+        #endregion
 
+        #region cbbSoLuongKhachToiDa_SelectedIndexChanged
         private void cbbSoLuongKhachToiDa_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbbSoLuongKhachToiDa.SelectedIndex != -1)
@@ -140,7 +153,9 @@ namespace CNPM
                 cbbTiLePhuThu.SelectedIndex = -1;
             }
         }
+        #endregion
 
+        #region cbbTiLePhuThu_SelectedIndexChanged
         private void cbbTiLePhuThu_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbbTiLePhuThu.SelectedIndex != -1)
@@ -154,6 +169,9 @@ namespace CNPM
                 cbbSoLuongPhong.SelectedIndex = -1;
             }
         }
+        #endregion
+
+        #region Ẩn các button chỉnh sửa
         private void AnAll()
         {
             btnDonGiaCacLoaiPhongNN.Enabled = false;
@@ -164,7 +182,9 @@ namespace CNPM
             btnTiLePhuThu.Enabled = false;
 
         }
+        #endregion
 
+        #region btnSoLuongLoaiPhong_Click
         private void btnSoLuongLoaiPhong_Click(object sender, EventArgs e)
         {
             p_iViTri = 1;
@@ -173,7 +193,9 @@ namespace CNPM
             frmQuyDinh fqd = new frmQuyDinh();
             fqd.ShowDialog();
         }
+        #endregion
 
+        #region btnDonGiaCacLoaiPhongVN_Click
         private void btnDonGiaCacLoaiPhongVN_Click(object sender, EventArgs e)
         {
             p_iViTri = 2;
@@ -182,7 +204,9 @@ namespace CNPM
             frmQuyDinh fqd = new frmQuyDinh();
             fqd.ShowDialog();
         }
+        #endregion
 
+        #region btnDonGiaCacLoaiPhongNN_Click
         private void btnDonGiaCacLoaiPhongNN_Click(object sender, EventArgs e)
         {
             p_iViTri = 3;
@@ -191,7 +215,9 @@ namespace CNPM
             frmQuyDinh fqd = new frmQuyDinh();
             fqd.ShowDialog();
         }
+        #endregion
 
+        #region btnTiLePhuThu_Click
         private void btnTiLePhuThu_Click(object sender, EventArgs e)
         {
             p_iViTri = 4;
@@ -200,7 +226,9 @@ namespace CNPM
             frmQuyDinh fqd = new frmQuyDinh();
             fqd.ShowDialog();
         }
+        #endregion
 
+        #region btnSoLuongKhachToiDa_Click
         private void btnSoLuongKhachToiDa_Click(object sender, EventArgs e)
         {
             p_iViTri = 5;
@@ -209,7 +237,9 @@ namespace CNPM
             frmQuyDinh fqd = new frmQuyDinh();
             fqd.ShowDialog();
         }
+        #endregion
 
+        #region btnHeSoKhach_Click
         private void btnHeSoKhach_Click(object sender, EventArgs e)
         {
             p_iViTri = 6;
@@ -218,7 +248,9 @@ namespace CNPM
             frmQuyDinh fqd = new frmQuyDinh();
             fqd.ShowDialog();
         }
+        #endregion
 
+        #region btnThoat_Click
         private void btnThoat_Click(object sender, EventArgs e)
         {
             DialogResult dlms = MessageBox.Show("Bạn có muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
@@ -227,7 +259,9 @@ namespace CNPM
                 this.Close();
             }
         }
+        #endregion
 
+        #region btnLuuThayDoi_Click
         private void btnLuuThayDoi_Click(object sender, EventArgs e)
         {
             string strMaPhong1 = frmQuyDinh.p_strMaPhong1;
@@ -360,6 +394,6 @@ namespace CNPM
             btnSoLuongKhachToiDa.Enabled = false;
             btnSoLuongLoaiPhong.Enabled = false;
         }
-
+        #endregion
     }
 }

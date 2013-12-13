@@ -35,7 +35,9 @@ namespace CNPM
         {
             LoadLoaiPhong();
             LoadThang();
-            LoadDoanhThuVaMatDo();
+            //load ngay hien tai
+            DateTime dt = DateTime.Now;
+            dtpNgayLap.Text = dt.ToString();
         }
         #endregion
 
@@ -398,7 +400,7 @@ namespace CNPM
         }
         #endregion
 
-        #region button thống kê
+        #region button lap báo cáo
         private void btnThongKe_Click(object sender, EventArgs e)
         {
             if (cbbThang.SelectedIndex != -1)
@@ -409,7 +411,7 @@ namespace CNPM
                     int iMD = ThemMatDo();
                     if (iTK != 0 || iMD != 0)
                     {
-                        MessageBox.Show("Đã thêm " + iTK + " thông tin doanh thu và " + iMD + " thông tin mật độ.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Lập báo cáo thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else MessageBox.Show("Không thể lập thống kê", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cbbThang.SelectedIndex = -1;
@@ -417,7 +419,6 @@ namespace CNPM
                 else MessageBox.Show("Không có dữ liệu để thống kê", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else MessageBox.Show("Chưa chọn tháng cần thống kê", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            LoadDoanhThuVaMatDo();
         }
         #endregion
 
@@ -477,104 +478,6 @@ namespace CNPM
         }
         #endregion
 
-        #region load doanh thu và mật độ
-        private void LoadDoanhThuVaMatDo()
-        {
-            lvwDoanhThu.Items.Clear();
-            lvwMatDo.Items.Clear();
-            //load doanh thu
-            DataSet dsDoanhThu = new DataSet();
-            dsDoanhThu = LapBaoCaoDoanhThuBUS.bLayDSDoanhThu();
-            int iSTT = 0;
-            foreach (DataRow dr in dsDoanhThu.Tables[0].Rows)
-            {
-                iSTT++;
-                ListViewItem item = new ListViewItem();
-                item.Text = iSTT.ToString();
-                item.SubItems.Add(dr["MADT"].ToString());
-                item.SubItems.Add(dr["DTThang"].ToString());
-                item.SubItems.Add(dr["DoanhThu"].ToString());
-                item.SubItems.Add(dr["TyLeDT"].ToString());
-                item.SubItems.Add(LapBaoCaoDoanhThuBUS.bLayTenLoaiPhongTheoMaPhong(int.Parse(dr["MaLP"].ToString())).ToString());
-                item.SubItems.Add(dr["Thang"].ToString());
-                lvwDoanhThu.Items.Add(item);
-            }
-            //
-            //load mat do
-            DataSet dsMatDo = new DataSet();
-            dsMatDo = LapBaoCaoDoanhThuBUS.bLayDSMatDo();
-            iSTT = 0;
-            foreach (DataRow dr in dsMatDo.Tables[0].Rows)
-            {
-                iSTT++;
-                ListViewItem item = new ListViewItem();
-                item.Text = iSTT.ToString();
-                item.SubItems.Add(dr["MaMD"].ToString());
-                item.SubItems.Add(dr["MDThang"].ToString());
-                item.SubItems.Add(dr["TyLeMD"].ToString());
-                item.SubItems.Add(dr["MaPhong"].ToString());
-                item.SubItems.Add(dr["Thang"].ToString());
-                lvwMatDo.Items.Add(item);
-            }
-        }
-        #endregion
-
-        #region button xóa
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            if (m_iflag == 1)
-            {
-                int iDong = lvwDoanhThu.SelectedItems.Count;
-                int iDem = 0;
-                if (iDong != 0)
-                {
-                    DialogResult ms = MessageBox.Show("Bạn muốn xóa " + iDong + " thông tin doanh thu", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (ms == DialogResult.Yes)
-                    {
-                        for (int i = 0; i < iDong; i++)
-                        {
-                            int iMaDT = int.Parse(lvwDoanhThu.SelectedItems[i].SubItems[1].Text);
-                            if (LapBaoCaoDoanhThuBUS.bXoaDoanThu(iMaDT))
-                            {
-                                iDem++;
-
-                            }
-                        }
-                    }
-                    MessageBox.Show("Đã xóa " + iDem + " thông tin doanh thu", "Thông báo");
-                }
-            }
-            else if (m_iflag == 2)
-            {
-                int iDong = lvwMatDo.SelectedItems.Count;
-                int iDem = 0;
-                if (iDong != 0)
-                {
-                    DialogResult ms = MessageBox.Show("Bạn muốn xóa " + iDong + " thông tin mật độ", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (ms == DialogResult.Yes)
-                    {
-                        for (int i = 0; i < iDong; i++)
-                        {
-                            int iMaMD = int.Parse(lvwMatDo.SelectedItems[i].SubItems[1].Text);
-                            if (LapBaoCaoDoanhThuBUS.bXoaMatDo(iMaMD))
-                            {
-                                iDem++;
-
-                            }
-                        }
-                    }
-                    MessageBox.Show("Đã xóa " + iDem + " thông tin mật độ", "Thông báo");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Chưa chọn thông tin cần xóa");
-            }
-            LoadDoanhThuVaMatDo();
-            m_iflag = 0;
-        }
-        #endregion
-
         #region gắn cờ cho listview doanh thu và mật độ
         private void lvwDoanhThu_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -597,8 +500,6 @@ namespace CNPM
             }
         }
         #endregion
-
-
 
     }
 }
