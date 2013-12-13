@@ -56,9 +56,11 @@
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(647, 389);
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(596, 389);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(125, 29);
+            this.btnThoat.Size = new System.Drawing.Size(125, 26);
             this.btnThoat.TabIndex = 27;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
@@ -66,9 +68,11 @@
             // 
             // btnLuuThayDoi
             // 
-            this.btnLuuThayDoi.Location = new System.Drawing.Point(501, 389);
+            this.btnLuuThayDoi.Image = ((System.Drawing.Image)(resources.GetObject("btnLuuThayDoi.Image")));
+            this.btnLuuThayDoi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuuThayDoi.Location = new System.Drawing.Point(450, 389);
             this.btnLuuThayDoi.Name = "btnLuuThayDoi";
-            this.btnLuuThayDoi.Size = new System.Drawing.Size(125, 29);
+            this.btnLuuThayDoi.Size = new System.Drawing.Size(125, 26);
             this.btnLuuThayDoi.TabIndex = 26;
             this.btnLuuThayDoi.Text = "Lưu Thay Đổi";
             this.btnLuuThayDoi.UseVisualStyleBackColor = true;
@@ -78,7 +82,7 @@
             // 
             this.lblLapBaoCao_1.AutoSize = true;
             this.lblLapBaoCao_1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLapBaoCao_1.Location = new System.Drawing.Point(297, 36);
+            this.lblLapBaoCao_1.Location = new System.Drawing.Point(282, 33);
             this.lblLapBaoCao_1.Name = "lblLapBaoCao_1";
             this.lblLapBaoCao_1.Size = new System.Drawing.Size(208, 18);
             this.lblLapBaoCao_1.TabIndex = 25;
@@ -107,10 +111,10 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 83);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(777, 281);
+            this.groupBox1.Size = new System.Drawing.Size(753, 281);
             this.groupBox1.TabIndex = 24;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Thông Tin Quy Định";
+            this.groupBox1.Text = "Thông Tin Các Quy Định";
             // 
             // cbbTiLePhuThu
             // 
@@ -133,9 +137,11 @@
             // 
             // btnTiLePhuThu
             // 
+            this.btnTiLePhuThu.Image = ((System.Drawing.Image)(resources.GetObject("btnTiLePhuThu.Image")));
+            this.btnTiLePhuThu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTiLePhuThu.Location = new System.Drawing.Point(601, 150);
             this.btnTiLePhuThu.Name = "btnTiLePhuThu";
-            this.btnTiLePhuThu.Size = new System.Drawing.Size(146, 23);
+            this.btnTiLePhuThu.Size = new System.Drawing.Size(119, 26);
             this.btnTiLePhuThu.TabIndex = 29;
             this.btnTiLePhuThu.Text = "Chỉnh sửa";
             this.btnTiLePhuThu.UseVisualStyleBackColor = true;
@@ -172,9 +178,11 @@
             // 
             // btnSoLuongKhachToiDa
             // 
+            this.btnSoLuongKhachToiDa.Image = ((System.Drawing.Image)(resources.GetObject("btnSoLuongKhachToiDa.Image")));
+            this.btnSoLuongKhachToiDa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSoLuongKhachToiDa.Location = new System.Drawing.Point(601, 191);
             this.btnSoLuongKhachToiDa.Name = "btnSoLuongKhachToiDa";
-            this.btnSoLuongKhachToiDa.Size = new System.Drawing.Size(146, 23);
+            this.btnSoLuongKhachToiDa.Size = new System.Drawing.Size(119, 26);
             this.btnSoLuongKhachToiDa.TabIndex = 24;
             this.btnSoLuongKhachToiDa.Text = "Chỉnh sửa";
             this.btnSoLuongKhachToiDa.UseVisualStyleBackColor = true;
@@ -191,9 +199,11 @@
             // 
             // btnHeSoKhach
             // 
+            this.btnHeSoKhach.Image = ((System.Drawing.Image)(resources.GetObject("btnHeSoKhach.Image")));
+            this.btnHeSoKhach.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHeSoKhach.Location = new System.Drawing.Point(601, 228);
             this.btnHeSoKhach.Name = "btnHeSoKhach";
-            this.btnHeSoKhach.Size = new System.Drawing.Size(146, 23);
+            this.btnHeSoKhach.Size = new System.Drawing.Size(119, 26);
             this.btnHeSoKhach.TabIndex = 22;
             this.btnHeSoKhach.Text = "Chỉnh sửa";
             this.btnHeSoKhach.UseVisualStyleBackColor = true;
@@ -240,9 +250,11 @@
             // 
             // btnDonGiaCacLoaiPhongNN
             // 
+            this.btnDonGiaCacLoaiPhongNN.Image = ((System.Drawing.Image)(resources.GetObject("btnDonGiaCacLoaiPhongNN.Image")));
+            this.btnDonGiaCacLoaiPhongNN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonGiaCacLoaiPhongNN.Location = new System.Drawing.Point(601, 108);
             this.btnDonGiaCacLoaiPhongNN.Name = "btnDonGiaCacLoaiPhongNN";
-            this.btnDonGiaCacLoaiPhongNN.Size = new System.Drawing.Size(146, 23);
+            this.btnDonGiaCacLoaiPhongNN.Size = new System.Drawing.Size(119, 26);
             this.btnDonGiaCacLoaiPhongNN.TabIndex = 6;
             this.btnDonGiaCacLoaiPhongNN.Text = "Chỉnh sửa";
             this.btnDonGiaCacLoaiPhongNN.UseVisualStyleBackColor = true;
@@ -259,9 +271,11 @@
             // 
             // btnDonGiaCacLoaiPhongVN
             // 
+            this.btnDonGiaCacLoaiPhongVN.Image = ((System.Drawing.Image)(resources.GetObject("btnDonGiaCacLoaiPhongVN.Image")));
+            this.btnDonGiaCacLoaiPhongVN.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonGiaCacLoaiPhongVN.Location = new System.Drawing.Point(601, 68);
             this.btnDonGiaCacLoaiPhongVN.Name = "btnDonGiaCacLoaiPhongVN";
-            this.btnDonGiaCacLoaiPhongVN.Size = new System.Drawing.Size(146, 23);
+            this.btnDonGiaCacLoaiPhongVN.Size = new System.Drawing.Size(119, 26);
             this.btnDonGiaCacLoaiPhongVN.TabIndex = 3;
             this.btnDonGiaCacLoaiPhongVN.Text = "Chỉnh sửa";
             this.btnDonGiaCacLoaiPhongVN.UseVisualStyleBackColor = true;
@@ -278,9 +292,11 @@
             // 
             // btnSoLuongLoaiPhong
             // 
+            this.btnSoLuongLoaiPhong.Image = ((System.Drawing.Image)(resources.GetObject("btnSoLuongLoaiPhong.Image")));
+            this.btnSoLuongLoaiPhong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSoLuongLoaiPhong.Location = new System.Drawing.Point(601, 28);
             this.btnSoLuongLoaiPhong.Name = "btnSoLuongLoaiPhong";
-            this.btnSoLuongLoaiPhong.Size = new System.Drawing.Size(146, 23);
+            this.btnSoLuongLoaiPhong.Size = new System.Drawing.Size(119, 26);
             this.btnSoLuongLoaiPhong.TabIndex = 0;
             this.btnSoLuongLoaiPhong.Text = "Chỉnh sửa";
             this.btnSoLuongLoaiPhong.UseVisualStyleBackColor = true;
@@ -291,7 +307,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(806, 443);
+            this.ClientSize = new System.Drawing.Size(781, 443);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnLuuThayDoi);
             this.Controls.Add(this.lblLapBaoCao_1);

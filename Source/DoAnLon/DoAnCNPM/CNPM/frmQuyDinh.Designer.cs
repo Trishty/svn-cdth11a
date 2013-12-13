@@ -42,7 +42,7 @@
             // lblMa
             // 
             this.lblMa.AutoSize = true;
-            this.lblMa.Location = new System.Drawing.Point(50, 26);
+            this.lblMa.Location = new System.Drawing.Point(44, 28);
             this.lblMa.Name = "lblMa";
             this.lblMa.Size = new System.Drawing.Size(58, 13);
             this.lblMa.TabIndex = 0;
@@ -50,24 +50,24 @@
             // 
             // txtMa
             // 
-            this.txtMa.Location = new System.Drawing.Point(183, 20);
+            this.txtMa.Location = new System.Drawing.Point(171, 25);
             this.txtMa.Name = "txtMa";
             this.txtMa.ReadOnly = true;
-            this.txtMa.Size = new System.Drawing.Size(262, 20);
+            this.txtMa.Size = new System.Drawing.Size(203, 20);
             this.txtMa.TabIndex = 1;
             // 
             // txtTen
             // 
-            this.txtTen.Location = new System.Drawing.Point(183, 60);
+            this.txtTen.Location = new System.Drawing.Point(171, 60);
             this.txtTen.Name = "txtTen";
             this.txtTen.ReadOnly = true;
-            this.txtTen.Size = new System.Drawing.Size(262, 20);
+            this.txtTen.Size = new System.Drawing.Size(203, 20);
             this.txtTen.TabIndex = 3;
             // 
             // lblTen
             // 
             this.lblTen.AutoSize = true;
-            this.lblTen.Location = new System.Drawing.Point(50, 63);
+            this.lblTen.Location = new System.Drawing.Point(44, 63);
             this.lblTen.Name = "lblTen";
             this.lblTen.Size = new System.Drawing.Size(58, 13);
             this.lblTen.TabIndex = 2;
@@ -75,16 +75,16 @@
             // 
             // txtGiaTri
             // 
-            this.txtGiaTri.Location = new System.Drawing.Point(183, 100);
+            this.txtGiaTri.Location = new System.Drawing.Point(171, 95);
             this.txtGiaTri.Name = "txtGiaTri";
-            this.txtGiaTri.Size = new System.Drawing.Size(262, 20);
+            this.txtGiaTri.Size = new System.Drawing.Size(203, 20);
             this.txtGiaTri.TabIndex = 0;
             this.txtGiaTri.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGiaTri_KeyPress);
             // 
             // lblGiaTri
             // 
             this.lblGiaTri.AutoSize = true;
-            this.lblGiaTri.Location = new System.Drawing.Point(50, 102);
+            this.lblGiaTri.Location = new System.Drawing.Point(44, 98);
             this.lblGiaTri.Name = "lblGiaTri";
             this.lblGiaTri.Size = new System.Drawing.Size(58, 13);
             this.lblGiaTri.TabIndex = 4;
@@ -92,17 +92,21 @@
             // 
             // btnDanhDauLuu
             // 
-            this.btnDanhDauLuu.Location = new System.Drawing.Point(136, 142);
+            this.btnDanhDauLuu.Image = ((System.Drawing.Image)(resources.GetObject("btnDanhDauLuu.Image")));
+            this.btnDanhDauLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDanhDauLuu.Location = new System.Drawing.Point(98, 135);
             this.btnDanhDauLuu.Name = "btnDanhDauLuu";
-            this.btnDanhDauLuu.Size = new System.Drawing.Size(108, 23);
+            this.btnDanhDauLuu.Size = new System.Drawing.Size(117, 23);
             this.btnDanhDauLuu.TabIndex = 6;
-            this.btnDanhDauLuu.Text = "Đánh Dấu Lưu";
+            this.btnDanhDauLuu.Text = "   Đánh Dấu Lưu";
             this.btnDanhDauLuu.UseVisualStyleBackColor = true;
             this.btnDanhDauLuu.Click += new System.EventHandler(this.btnDanhDauLuu_Click);
             // 
             // btnThoat
             // 
-            this.btnThoat.Location = new System.Drawing.Point(286, 142);
+            this.btnThoat.Image = ((System.Drawing.Image)(resources.GetObject("btnThoat.Image")));
+            this.btnThoat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThoat.Location = new System.Drawing.Point(245, 135);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(108, 23);
             this.btnThoat.TabIndex = 7;
@@ -114,8 +118,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(505, 190);
+            this.ClientSize = new System.Drawing.Size(424, 184);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDanhDauLuu);
             this.Controls.Add(this.txtGiaTri);
@@ -125,6 +130,7 @@
             this.Controls.Add(this.txtMa);
             this.Controls.Add(this.lblMa);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmQuyDinh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmQuyDinh";

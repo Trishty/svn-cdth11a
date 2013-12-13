@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using DTO;
 using BUS;
+using System.IO;
 
 namespace CNPM
 {
@@ -53,6 +54,16 @@ namespace CNPM
                 }
                 else
                 {
+                    FileStream fs = new FileStream("GhiNhoTaiKhoan.txt", FileMode.Append);
+                    StreamWriter writeFile = new StreamWriter(fs, Encoding.UTF8);
+                    if (chkGhiNho.Checked == true)
+                    {
+                        writeFile.WriteLine(txtMatKhau.Text);
+                        writeFile.WriteLine(txtTen.Text);           
+                        writeFile.Flush();
+                    }
+                    writeFile.Close();
+                    //
                     frmMain fm = new frmMain();
                     fm.Show();
                     this.Hide();
@@ -87,15 +98,61 @@ namespace CNPM
         }
         #endregion
 
-        #region gán màu trắng cho textbox
+        #region gán màu trắng cho textbox và lấy pass nếu đã ghi nhớ
         private void txtTen_TextChanged(object sender, EventArgs e)
         {
             txtTen.BackColor = Color.White;
+            try
+            {
+                string[] lines = File.ReadAllLines("GhiNhoTaiKhoan.txt");
+                int iDong = lines.Length;
+                for (int i = iDong-1; i >= 0; i--)
+                {
+                    if (i % 2 == 0)
+                    {
+                        if (txtTen.Text == lines[i])
+                        {
+                            txtMatKhau.Text = lines[i + 1];
+                            txtTen.BackColor = Color.Beige;
+                            txtMatKhau.BackColor = Color.Beige;
+                            break;
+
+                        }
+                        else
+                        {
+                            txtMatKhau.Clear();
+                            txtTen.BackColor = Color.White;
+                            txtMatKhau.BackColor = Color.White;
+                        }
+                    }
+                }
+                
+           }
+           catch { }
         }
 
         private void txtMatKhau_TextChanged(object sender, EventArgs e)
         {
             txtMatKhau.BackColor = Color.White;
+        }
+        #endregion
+
+        #region form load
+        private void frmDangNhap_Load(object sender, EventArgs e)
+        {
+            if (!File.Exists("GhiNhoTaiKhoan.txt"))
+            {
+                FileStream fs;
+                fs = new FileStream("GhiNhoTaiKhoan.txt", FileMode.Create);
+                StreamWriter sWriter = new StreamWriter(fs, Encoding.UTF8);
+                sWriter.Flush();
+                fs.Close();
+            }
+        }
+
+        private void frmDangNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
         #endregion
     }
