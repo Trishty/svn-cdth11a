@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Data;
-using System.Data.OleDb;
 using DTO;
 using System.Data.SqlClient;
 
@@ -48,7 +47,7 @@ namespace DAO
         public static bool dSuaTyLePhuThu(ThayDoiQuyDinhDTO tdqd)
         {
             SqlConnection con = DataProvider.ConnectionString();
-            string sql = "update LoaiPhong set TyLePhuThu = " + tdqd.TyLePhuThu + " where MaLP=" + tdqd.MaLP + "";
+            string sql = "update LoaiPhong set TyLePhuThuMax = " + tdqd.TyLePhuThu + " where MaLP=" + tdqd.MaLP + "";
             return DataProvider.ExecuteNonQuery(sql, con);
         }
 

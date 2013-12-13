@@ -60,7 +60,7 @@ namespace CNPM
                 strDisplay = "<" + dr["MaLP"].ToString() + "> " + "Tên loại phòng: [ " + dr["TenLP"].ToString() + " ]     Số lượng khách tối đa: { " + dr["SLKhachToiDa"].ToString() + " }";
                 cbbSoLuongKhachToiDa.Items.Add(strDisplay);
                 //ti le phu thu
-                strDisplay = "<" + dr["MaLP"].ToString() + "> " + "Tên loại phòng: [ " + dr["TenLP"].ToString() + " ]     Tỉ lệ phụ thu: { " + dr["TyLePhuThu"].ToString() + "% }";
+                strDisplay = "<" + dr["MaLP"].ToString() + "> " + "Tên loại phòng: [ " + dr["TenLP"].ToString() + " ]     Tỉ lệ phụ thu: { " + dr["TyLePhuThuMax"].ToString() + "% }";
                 cbbTiLePhuThu.Items.Add(strDisplay);
             }
             //// lay he so loai khach
