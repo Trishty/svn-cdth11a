@@ -57,7 +57,6 @@ namespace CNPM
             btnChinhSua2.Enabled = false;
             btnChinhSua3.Enabled = false;
             btnChinhSua4.Enabled = false;
-            btnChinhSua5.Enabled = false;
             btnChinhSua6.Enabled = false;
             btnChinhSua7.Enabled = false;
         }
@@ -95,20 +94,33 @@ namespace CNPM
             txtTenDangNhap.Text = "";
         }
 
-        private void lvwNhanVien_SelectedIndexChanged(object sender, EventArgs e)
+        private void EnabledChinhSua()
         {
-            Disable();
-            btnThem.Enabled = true;
-            btnLuu.Enabled = true;
-            btnXoa.Enabled = true;
-
             btnChinhSua1.Enabled = true;
             btnChinhSua2.Enabled = true;
             btnChinhSua3.Enabled = true;
             btnChinhSua4.Enabled = true;
-            btnChinhSua5.Enabled = true;
             btnChinhSua6.Enabled = true;
             btnChinhSua7.Enabled = true;
+        }
+
+        private void DisabledChinhSua()
+        {
+            btnChinhSua1.Enabled = false;
+            btnChinhSua2.Enabled = false;
+            btnChinhSua3.Enabled = false;
+            btnChinhSua4.Enabled = false;
+            btnChinhSua6.Enabled = false;
+            btnChinhSua7.Enabled = false;
+        }
+
+        private void lvwNhanVien_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Disable();
+            btnThem.Enabled = true;
+            btnLuu.Enabled = false;
+            btnXoa.Enabled = true;
+            EnabledChinhSua();
 
             foreach (ListViewItem item in lvwNhanVien.SelectedItems)
             {
@@ -152,6 +164,10 @@ namespace CNPM
                             LoadListView();
                             Empty();
                             Disable();
+                            btnLuu.Enabled = false;
+                            btnThem.Enabled = true;
+                            btnXoa.Enabled = false;
+                            DisabledChinhSua();
                         }
                         else MessageBox.Show("Tên tài khoản đã tồn tại");
                     }
@@ -173,6 +189,7 @@ namespace CNPM
                             LoadListView();
                             Empty();
                             Disable();
+                            DisabledChinhSua();
                         }
                         else MessageBox.Show("Tên tài khoản không tồn tại");
                     }
@@ -191,14 +208,7 @@ namespace CNPM
                             LoadListView();
                             Empty();
                             Disable();
-
-                            btnChinhSua1.Enabled = false;
-                            btnChinhSua2.Enabled = false;
-                            btnChinhSua3.Enabled = false;
-                            btnChinhSua4.Enabled = false;
-                            btnChinhSua5.Enabled = false;
-                            btnChinhSua6.Enabled = false;
-                            btnChinhSua7.Enabled = false;
+                            DisabledChinhSua();
                         }
                         else MessageBox.Show("Tên tài khoản không tồn tại");
                     }
@@ -214,16 +224,8 @@ namespace CNPM
             flag = 1;
             btnXoa.Enabled = false;
             btnThem.Enabled = false;
-
-        }
-
-        private void btnChinhSua5_Click(object sender, EventArgs e)
-        {
-            flag = 2;
-            btnXoa.Enabled = false;
-            btnThem.Enabled = false;
-            btnChinhSua5.Enabled = false;
-            txtTenDangNhap.Enabled = true;
+            btnLuu.Enabled = true;
+            DisabledChinhSua();
         }
 
         private void btnChinhSua6_Click(object sender, EventArgs e)
@@ -235,6 +237,7 @@ namespace CNPM
             btnChinhSua7.Enabled = false;
             txtMatKhau.Enabled = true;
             txtReMatKhau.Enabled = true;
+            btnLuu.Enabled = true;
         }
 
         private void btnChinhSua7_Click(object sender, EventArgs e)
@@ -246,6 +249,7 @@ namespace CNPM
             btnChinhSua7.Enabled = false;
             txtMatKhau.Enabled = true;
             txtReMatKhau.Enabled = true;
+            btnLuu.Enabled = true;
         }
 
         private void btnChinhSua1_Click(object sender, EventArgs e)
@@ -255,6 +259,7 @@ namespace CNPM
             btnThem.Enabled = false;
             btnChinhSua1.Enabled = false;
             txtHoTen.Enabled = true;
+            btnLuu.Enabled = true;
         }
 
         private void btnChinhSua2_Click(object sender, EventArgs e)
@@ -264,6 +269,7 @@ namespace CNPM
             btnThem.Enabled = false;
             btnChinhSua2.Enabled = false;
             txtDiaChi.Enabled = true;
+            btnLuu.Enabled = true;
         }
 
         private void btnChinhSua3_Click(object sender, EventArgs e)
@@ -273,6 +279,7 @@ namespace CNPM
             btnThem.Enabled = false;
             btnChinhSua3.Enabled = false;
             txtSoDienThoai.Enabled = true;
+            btnLuu.Enabled = true;
         }
 
         private void btnChinhSua4_Click(object sender, EventArgs e)
@@ -282,6 +289,7 @@ namespace CNPM
             btnThem.Enabled = false;
             btnChinhSua4.Enabled = false;
             txtCMND.Enabled = true;
+            btnLuu.Enabled = true;
         }
     }
 }

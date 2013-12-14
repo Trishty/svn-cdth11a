@@ -34,7 +34,6 @@
             this.btnChinhSua4 = new System.Windows.Forms.Button();
             this.btnChinhSua3 = new System.Windows.Forms.Button();
             this.btnChinhSua2 = new System.Windows.Forms.Button();
-            this.btnChinhSua5 = new System.Windows.Forms.Button();
             this.btnChinhSua6 = new System.Windows.Forms.Button();
             this.btnChinhSua7 = new System.Windows.Forms.Button();
             this.btnChinhSua1 = new System.Windows.Forms.Button();
@@ -72,7 +71,6 @@
             this.groupBox1.Controls.Add(this.btnChinhSua4);
             this.groupBox1.Controls.Add(this.btnChinhSua3);
             this.groupBox1.Controls.Add(this.btnChinhSua2);
-            this.groupBox1.Controls.Add(this.btnChinhSua5);
             this.groupBox1.Controls.Add(this.btnChinhSua6);
             this.groupBox1.Controls.Add(this.btnChinhSua7);
             this.groupBox1.Controls.Add(this.btnChinhSua1);
@@ -102,8 +100,8 @@
             this.txtCMND.Location = new System.Drawing.Point(202, 293);
             this.txtCMND.Name = "txtCMND";
             this.txtCMND.Size = new System.Drawing.Size(219, 22);
-            this.txtCMND.TabIndex = 16;
-            this.txtCMND.Tag = "6";
+            this.txtCMND.TabIndex = 6;
+            this.txtCMND.Tag = "";
             // 
             // lblCMND
             // 
@@ -117,77 +115,60 @@
             // 
             // btnChinhSua4
             // 
-            this.btnChinhSua4.Enabled = false;
             this.btnChinhSua4.Location = new System.Drawing.Point(476, 293);
             this.btnChinhSua4.Name = "btnChinhSua4";
             this.btnChinhSua4.Size = new System.Drawing.Size(91, 23);
-            this.btnChinhSua4.TabIndex = 13;
+            this.btnChinhSua4.TabIndex = 12;
             this.btnChinhSua4.Text = "Chỉnh sửa";
             this.btnChinhSua4.UseVisualStyleBackColor = true;
             this.btnChinhSua4.Click += new System.EventHandler(this.btnChinhSua4_Click);
             // 
             // btnChinhSua3
             // 
-            this.btnChinhSua3.Enabled = false;
             this.btnChinhSua3.Location = new System.Drawing.Point(476, 254);
             this.btnChinhSua3.Name = "btnChinhSua3";
             this.btnChinhSua3.Size = new System.Drawing.Size(91, 23);
-            this.btnChinhSua3.TabIndex = 12;
+            this.btnChinhSua3.TabIndex = 11;
             this.btnChinhSua3.Text = "Chỉnh sửa";
             this.btnChinhSua3.UseVisualStyleBackColor = true;
             this.btnChinhSua3.Click += new System.EventHandler(this.btnChinhSua3_Click);
             // 
             // btnChinhSua2
             // 
-            this.btnChinhSua2.Enabled = false;
             this.btnChinhSua2.Location = new System.Drawing.Point(476, 210);
             this.btnChinhSua2.Name = "btnChinhSua2";
             this.btnChinhSua2.Size = new System.Drawing.Size(91, 23);
-            this.btnChinhSua2.TabIndex = 11;
+            this.btnChinhSua2.TabIndex = 10;
             this.btnChinhSua2.Text = "Chỉnh sửa";
             this.btnChinhSua2.UseVisualStyleBackColor = true;
             this.btnChinhSua2.Click += new System.EventHandler(this.btnChinhSua2_Click);
             // 
-            // btnChinhSua5
-            // 
-            this.btnChinhSua5.Enabled = false;
-            this.btnChinhSua5.Location = new System.Drawing.Point(476, 49);
-            this.btnChinhSua5.Name = "btnChinhSua5";
-            this.btnChinhSua5.Size = new System.Drawing.Size(91, 23);
-            this.btnChinhSua5.TabIndex = 7;
-            this.btnChinhSua5.Text = "Chỉnh sửa";
-            this.btnChinhSua5.UseVisualStyleBackColor = true;
-            this.btnChinhSua5.Click += new System.EventHandler(this.btnChinhSua5_Click);
-            // 
             // btnChinhSua6
             // 
-            this.btnChinhSua6.Enabled = false;
             this.btnChinhSua6.Location = new System.Drawing.Point(476, 90);
             this.btnChinhSua6.Name = "btnChinhSua6";
             this.btnChinhSua6.Size = new System.Drawing.Size(91, 23);
-            this.btnChinhSua6.TabIndex = 8;
+            this.btnChinhSua6.TabIndex = 7;
             this.btnChinhSua6.Text = "Chỉnh sửa";
             this.btnChinhSua6.UseVisualStyleBackColor = true;
             this.btnChinhSua6.Click += new System.EventHandler(this.btnChinhSua6_Click);
             // 
             // btnChinhSua7
             // 
-            this.btnChinhSua7.Enabled = false;
             this.btnChinhSua7.Location = new System.Drawing.Point(476, 132);
             this.btnChinhSua7.Name = "btnChinhSua7";
             this.btnChinhSua7.Size = new System.Drawing.Size(91, 23);
-            this.btnChinhSua7.TabIndex = 9;
+            this.btnChinhSua7.TabIndex = 8;
             this.btnChinhSua7.Text = "Chỉnh sửa";
             this.btnChinhSua7.UseVisualStyleBackColor = true;
             this.btnChinhSua7.Click += new System.EventHandler(this.btnChinhSua7_Click);
             // 
             // btnChinhSua1
             // 
-            this.btnChinhSua1.Enabled = false;
             this.btnChinhSua1.Location = new System.Drawing.Point(476, 172);
             this.btnChinhSua1.Name = "btnChinhSua1";
             this.btnChinhSua1.Size = new System.Drawing.Size(91, 23);
-            this.btnChinhSua1.TabIndex = 10;
+            this.btnChinhSua1.TabIndex = 9;
             this.btnChinhSua1.Text = "Chỉnh sửa";
             this.btnChinhSua1.UseVisualStyleBackColor = true;
             this.btnChinhSua1.Click += new System.EventHandler(this.btnChinhSua1_Click);
@@ -264,8 +245,8 @@
             this.txtDiaChi.Location = new System.Drawing.Point(202, 210);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(219, 22);
-            this.txtDiaChi.TabIndex = 10;
-            this.txtDiaChi.Tag = "4";
+            this.txtDiaChi.TabIndex = 4;
+            this.txtDiaChi.Tag = "";
             // 
             // txtMatKhau
             // 
@@ -291,8 +272,8 @@
             this.txtHoTen.Location = new System.Drawing.Point(202, 172);
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(219, 22);
-            this.txtHoTen.TabIndex = 6;
-            this.txtHoTen.Tag = "3";
+            this.txtHoTen.TabIndex = 3;
+            this.txtHoTen.Tag = "";
             // 
             // lblDiaChi
             // 
@@ -375,7 +356,7 @@
             this.lvwNhanVien.Location = new System.Drawing.Point(26, 424);
             this.lvwNhanVien.Name = "lvwNhanVien";
             this.lvwNhanVien.Size = new System.Drawing.Size(639, 122);
-            this.lvwNhanVien.TabIndex = 17;
+            this.lvwNhanVien.TabIndex = 13;
             this.lvwNhanVien.UseCompatibleStateImageBehavior = false;
             this.lvwNhanVien.View = System.Windows.Forms.View.Details;
             this.lvwNhanVien.SelectedIndexChanged += new System.EventHandler(this.lvwNhanVien_SelectedIndexChanged);
@@ -452,7 +433,6 @@
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnLuu;
-        private System.Windows.Forms.Button btnChinhSua5;
         private System.Windows.Forms.Button btnChinhSua7;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
