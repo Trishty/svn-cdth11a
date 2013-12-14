@@ -21,6 +21,7 @@ namespace CNPM
         int iSTT = 0;
         int rownum = 0;
         int iFlag = 0;
+        Boolean bPhieuDat = false;
         PhieuThueDTO ptDTO = new PhieuThueDTO();
         #endregion
 
@@ -42,7 +43,8 @@ namespace CNPM
         #region Tắt control
         private void DisableControl()
         {
-            txtMa.Enabled = false;
+            //txtMa.Enabled = false;
+            cboMaPT.Enabled = false;
             cboPhong.Enabled = false;
             dtThue.Enabled = false;
             dtTra.Enabled = false;
@@ -53,7 +55,8 @@ namespace CNPM
         #region Mở control
         private void EnableControl()
         {
-            txtMa.Enabled = false;
+            //txtMa.Enabled = false;
+            cboMaPT.Enabled = false;
             cboPhong.Enabled = true;
             dtThue.Enabled = false;
             dtTra.Enabled = true;
@@ -114,16 +117,15 @@ namespace CNPM
         #region Lưu
         private void btnLuu_Click(object sender, EventArgs e)
         {
+            //Thông tin phiếu thuê
+            ptDTO.MaPT = cboMaPT.SelectedValue.ToString();
+            ptDTO.Phong = cboPhong.Text;
+            ptDTO.NgayThue = dtThue.Text;
+            ptDTO.NgayTra = dtTra.Text;
+
             if (iFlag == 1)
             {
                 //Thêm phiếu thuê
-                
-                //Thông tin phiếu thuê
-                ptDTO.MaPT = txtMa.Text;
-                ptDTO.Phong = cboPhong.Text;
-                ptDTO.NgayThue = dtThue.Text;
-                ptDTO.NgayTra = dtTra.Text;
-
                 if (PhieuThueBUS.ThemPT(ptDTO) == true)
                 {
                     //Thông tin khách hàng
@@ -166,12 +168,25 @@ namespace CNPM
                 }
                 
             }
-            btnHuy.Enabled = true;
+
+            if (iFlag == 2)
+            { 
+                ptDTO.TrangThai = "False";
+                if (PhieuThueBUS.XoaPT(ptDTO) == true)
+                {
+                    MessageBox.Show("Xóa phiếu thuê thành công!");
+                }
+                else
+                {
+                    MessageBox.Show("Xóa phiếu thuê thất bại!");
+                }
+            }
+            iFlag = 0;
             btnLuu.Enabled = false;
         }
         #endregion
 
-        #region Huỷ
+        #region Làm mới
         private void btnHuy_Click(object sender, EventArgs e)
         {
             iFlag = 1;
@@ -181,14 +196,20 @@ namespace CNPM
             {
                 int iPT = Convert.ToInt32(ptDTO.MaPT);
                 iPT += 1;
-                txtMa.Text = iPT.ToString();
+                //txtMa.Text = iPT.ToString();
+                cboMaPT.DataSource = null;
+                cboMaPT.Items.Clear();
+                cboMaPT.Items.Add(iPT.ToString());
+                cboMaPT.SelectedIndex = 0;
+                cboMaPT.Enabled = false;
             }
             cboPhong.SelectedIndex = 0;
+            dtThue.Text = DateTime.Now.ToShortDateString();
+            dtTra.Text = DateTime.Now.ToShortDateString();
             iSTT = Convert.ToInt32(ptDTO.MaKH);
             rownum = 0;
             TaoDataGridView();
             EnableControl();
-            btnHuy.Enabled = false;
             btnLuu.Enabled = true;
         }
         #endregion
@@ -206,6 +227,40 @@ namespace CNPM
             iSTT += 1;
             dataGridView1.Rows[rownum].Cells[0].Value = iSTT;
             rownum += 1;
+        }
+        #endregion
+
+        #region Xóa
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            iFlag = 2;
+            DisableControl();
+            DataSet dsMaPT = new DataSet();
+            dsMaPT = PhieuThueBUS.LayDanhSachPhieuThue(ptDTO);
+            cboMaPT.DataSource = dsMaPT.Tables[0];
+            cboMaPT.DisplayMember = "MaPhieuThue";
+            cboMaPT.ValueMember = "MaPhieuThue";
+            cboMaPT.SelectedIndex = -1;
+            cboMaPT.Enabled = true;
+            btnLuu.Enabled = true;
+            bPhieuDat = true;
+        }
+        #endregion
+
+        #region Thông tin phiếu thuê
+        private void cboMaPT_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboMaPT.SelectedIndex != -1 && iFlag != 1 && bPhieuDat)
+            {
+                ptDTO.MaPT = cboMaPT.SelectedValue.ToString();
+                DataSet dsMaPT = new DataSet();
+                dsMaPT = PhieuThueBUS.LayThongTinPhieuThue(ptDTO);
+                cboPhong.Text = dsMaPT.Tables[0].Rows[0]["MaPhong"].ToString();
+                string strNgayThue = dsMaPT.Tables[0].Rows[0]["NgayThuePhong"].ToString();
+                string strNgayTra = dsMaPT.Tables[0].Rows[0]["NgayTraPhong"].ToString();
+                dtThue.Text = strNgayThue.Substring(0, strNgayThue.IndexOf(' '));
+                dtTra.Text = strNgayTra.Substring(0, strNgayTra.IndexOf(' '));
+            }
         }
         #endregion
     }

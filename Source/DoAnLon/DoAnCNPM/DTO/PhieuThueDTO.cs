@@ -83,5 +83,13 @@ namespace DTO
             get { return _DienThoai; }
             set { _DienThoai = value; }
         }
+        private string _TrangThai;
+
+        public string TrangThai
+        {
+            get { return _TrangThai; }
+            set { _TrangThai = value; }
+        }
+
     }
 }

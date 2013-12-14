@@ -30,6 +30,15 @@ namespace DAO
             return DataProvider.ExecuteNonQuery(strsql, con);
         }
 
+        public static bool XoaPT(PhieuThueDTO ptDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "update PhieuThuePhong set "
+            + "TrangThai = '" + ptDTO.TrangThai
+            + "' where MaPhieuThue = " + ptDTO.MaPT;
+            return DataProvider.ExecuteNonQuery(strsql, con);
+        }
+
         public static string LayMaTuPhieuDong(PhieuThueDTO ptDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
@@ -47,15 +56,29 @@ namespace DAO
         public static DataSet LayDanhSachPhong(PhieuThueDTO ptDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
-            string strTenBang = "Select * from Phong";
-            return DataProvider.GetDataSet(strTenBang, con);
+            string strsql = "Select * from Phong";
+            return DataProvider.GetDataSet(strsql, con);
         }
 
         public static DataSet LayDanhLoaiKhach(PhieuThueDTO ptDTO)
         {
             SqlConnection con = DataProvider.ConnectionString();
-            string strTenBang = "Select * from LoaiKhach";
-            return DataProvider.GetDataSet(strTenBang, con);
+            string strsql = "Select * from LoaiKhach";
+            return DataProvider.GetDataSet(strsql, con);
+        }
+
+        public static DataSet LayDanhSachPhieuThue(PhieuThueDTO ptDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "Select * from PhieuThuePhong";
+            return DataProvider.GetDataSet(strsql, con);
+        }
+
+        public static DataSet LayThongTinPhieuThue(PhieuThueDTO ptDTO)
+        {
+            SqlConnection con = DataProvider.ConnectionString();
+            string strsql = "Select * from PhieuThuePhong where MaPhieuThue = " + ptDTO.MaPT;
+            return DataProvider.GetDataSet(strsql, con);
         }
     }
 }
