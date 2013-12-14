@@ -46,10 +46,10 @@
             this.btnThoat = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.dtTra = new System.Windows.Forms.DateTimePicker();
-            this.txtMa = new System.Windows.Forms.TextBox();
             this.dtThue = new System.Windows.Forms.DateTimePicker();
             this.cboPhong = new System.Windows.Forms.ComboBox();
             this.btnXoa = new System.Windows.Forms.Button();
+            this.cboMaPT = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -159,7 +159,7 @@
             // 
             // btnLuu
             // 
-            this.btnLuu.Location = new System.Drawing.Point(403, 372);
+            this.btnLuu.Location = new System.Drawing.Point(404, 372);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(75, 23);
             this.btnLuu.TabIndex = 5;
@@ -169,7 +169,7 @@
             // 
             // btnHuy
             // 
-            this.btnHuy.Location = new System.Drawing.Point(135, 372);
+            this.btnHuy.Location = new System.Drawing.Point(136, 372);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(75, 23);
             this.btnHuy.TabIndex = 6;
@@ -180,7 +180,7 @@
             // btnThoat
             // 
             this.btnThoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnThoat.Location = new System.Drawing.Point(537, 372);
+            this.btnThoat.Location = new System.Drawing.Point(538, 372);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(75, 23);
             this.btnThoat.TabIndex = 7;
@@ -205,14 +205,6 @@
             this.dtTra.Size = new System.Drawing.Size(143, 20);
             this.dtTra.TabIndex = 3;
             // 
-            // txtMa
-            // 
-            this.txtMa.Enabled = false;
-            this.txtMa.Location = new System.Drawing.Point(354, 74);
-            this.txtMa.Name = "txtMa";
-            this.txtMa.Size = new System.Drawing.Size(143, 20);
-            this.txtMa.TabIndex = 13;
-            // 
             // dtThue
             // 
             this.dtThue.Enabled = false;
@@ -232,12 +224,22 @@
             // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(269, 372);
+            this.btnXoa.Location = new System.Drawing.Point(270, 372);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(75, 23);
             this.btnXoa.TabIndex = 16;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
+            // cboMaPT
+            // 
+            this.cboMaPT.FormattingEnabled = true;
+            this.cboMaPT.Location = new System.Drawing.Point(354, 74);
+            this.cboMaPT.Name = "cboMaPT";
+            this.cboMaPT.Size = new System.Drawing.Size(144, 21);
+            this.cboMaPT.TabIndex = 17;
+            this.cboMaPT.SelectedIndexChanged += new System.EventHandler(this.cboMaPT_SelectedIndexChanged);
             // 
             // frmPhieuThuePhong
             // 
@@ -246,10 +248,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(749, 416);
+            this.Controls.Add(this.cboMaPT);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.cboPhong);
             this.Controls.Add(this.dtThue);
-            this.Controls.Add(this.txtMa);
             this.Controls.Add(this.dtTra);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnThoat);
@@ -283,7 +285,6 @@
         private System.Windows.Forms.Button btnThoat;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dtTra;
-        private System.Windows.Forms.TextBox txtMa;
         private System.Windows.Forms.DateTimePicker dtThue;
         private System.Windows.Forms.ComboBox cboPhong;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaKH;
@@ -294,5 +295,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DC;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoDT;
         private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.ComboBox cboMaPT;
     }
 }
