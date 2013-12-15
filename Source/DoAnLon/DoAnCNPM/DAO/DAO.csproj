@@ -34,6 +34,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DangNhapDAO.cs" />
+    <Compile Include="DanhMucPhongDAO.cs" />
     <Compile Include="DataProvider.cs" />
     <Compile Include="LapBaoCaoDoanhThuDAO.cs" />
     <Compile Include="NhanVienDAO.cs" />
