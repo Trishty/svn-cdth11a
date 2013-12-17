@@ -114,3 +114,5 @@ C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNP
 C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
 C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\GUI.csproj.GenerateResource.Cache
 C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyKhachHang.resources
+C:\Users\Nguyen Hoang Nam\Desktop\SVN Project\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+C:\Users\Nguyen Hoang Nam\Desktop\SVN Project\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
