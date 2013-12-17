@@ -404,6 +404,7 @@
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnLuu);
             this.Name = "frmQuanLyNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmQuanLyNhanVien";
             this.Load += new System.EventHandler(this.frmQuanLyNhanVien_Load);
             this.groupBox1.ResumeLayout(false);

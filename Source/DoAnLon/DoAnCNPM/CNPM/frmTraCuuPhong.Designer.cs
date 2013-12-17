@@ -143,6 +143,7 @@
             this.Controls.Add(this.lblTraCuu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmTraCuuPhong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Khách Sạn";
             ((System.ComponentModel.ISupportInitialize)(this.dgrvDanhSachPhong)).EndInit();
             this.ResumeLayout(false);

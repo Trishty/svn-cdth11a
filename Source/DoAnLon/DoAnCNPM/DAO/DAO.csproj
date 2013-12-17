@@ -36,6 +36,7 @@
     <Compile Include="DangNhapDAO.cs" />
     <Compile Include="DanhMucPhongDAO.cs" />
     <Compile Include="DataProvider.cs" />
+    <Compile Include="KhachHangDAO.cs" />
     <Compile Include="LapBaoCaoDoanhThuDAO.cs" />
     <Compile Include="NhanVienDAO.cs" />
     <Compile Include="PhieuThueDAO.cs" />
