@@ -118,7 +118,7 @@ namespace CNPM
         private void btnLuu_Click(object sender, EventArgs e)
         {
             //Thông tin phiếu thuê
-            ptDTO.MaPT = cboMaPT.SelectedValue.ToString();
+            ptDTO.MaPT = cboMaPT.Text;
             ptDTO.Phong = cboPhong.Text;
             ptDTO.NgayThue = dtThue.Text;
             ptDTO.NgayTra = dtTra.Text;

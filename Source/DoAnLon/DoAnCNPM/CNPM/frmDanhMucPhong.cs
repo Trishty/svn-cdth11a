@@ -104,13 +104,20 @@ namespace CNPM
                 //if (strTinhTrang == "Sửa chữa")
                 //    dmDTO.TinhTrang = "2";
                 string strTinhTrang = dataGridView1.Rows[i].Cells[2].Value.ToString();
-                if (strTinhTrang == "Cón trống")
+                if (strTinhTrang == "Còn trống")
                     dmDTO.TinhTrang = "0";
-                dmDTO.GhiChu = dataGridView1.Rows[i].Cells[3].Value.ToString();
+                if (dataGridView1.Rows[i].Cells[3].Value != null)
+                    dmDTO.GhiChu = dataGridView1.Rows[i].Cells[3].Value.ToString();
+                else
+                    dmDTO.GhiChu = "";
                 if (DanhMucPhongBUS.ThemPhong(dmDTO) == false)
                 {
                     MessageBox.Show("Thêm danh mục phòng thất bại!");
                     break;
+                }
+                else
+                {
+                    CreateListView();
                 }
             }
             bFlag = false;
