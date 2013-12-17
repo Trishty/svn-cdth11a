@@ -1,0 +1,93 @@
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\BUS.dll
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\DTO.dll
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\DAO.dll
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\BUS.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\DAO.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\DTO.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\ResolveAssemblyReference.cache
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDangNhap.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDanhMucPhong.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmHoaDon.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmLapBaoCaoDoanhThu.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmMain.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyNhanVien.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmThayDoiCacQuyDinh.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+D:\HK5\CNPM\SVN\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuyDinh.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\BUS.dll
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\DTO.dll
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.dll
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\BUS.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\bin\Debug\DTO.pdb
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDangNhap.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDanhMucPhong.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmHoaDon.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmLapBaoCaoDoanhThu.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmMain.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyNhanVien.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuyDinh.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmThayDoiCacQuyDinh.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\BUS.dll
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\DTO.dll
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.dll
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\BUS.pdb
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.pdb
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\bin\Debug\DTO.pdb
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDangNhap.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDanhMucPhong.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmHoaDon.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmLapBaoCaoDoanhThu.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmMain.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyNhanVien.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuyDinh.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmThayDoiCacQuyDinh.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
+C:\Documents and Settings\Skamylove\Desktop\DoAnCNPM\CNPM\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\bin\Debug\BUS.dll
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\bin\Debug\DTO.dll
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.dll
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\bin\Debug\BUS.pdb
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\bin\Debug\DAO.pdb
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\bin\Debug\DTO.pdb
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDangNhap.resources
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDanhMucPhong.resources
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmHoaDon.resources
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmLapBaoCaoDoanhThu.resources
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmMain.resources
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyNhanVien.resources
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuyDinh.resources
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmThayDoiCacQuyDinh.resources
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
+C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Users\Nguyen Hoang Nam\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyKhachHang.resources
