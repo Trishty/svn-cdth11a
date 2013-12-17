@@ -90,3 +90,27 @@ C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTha
 C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
 C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
 C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\CNPM\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.exe
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\QuanLyKhachSan-Nhom4-CDTH11A.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\BUS.dll
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\DTO.dll
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\DAO.dll
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\BUS.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\DAO.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\bin\Debug\DTO.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDangNhap.resources
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmDanhMucPhong.resources
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmHoaDon.resources
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmLapBaoCaoDoanhThu.resources
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmMain.resources
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmPhieuThuePhong.resources
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyNhanVien.resources
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuyDinh.resources
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmThayDoiCacQuyDinh.resources
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmTraCuuPhong.resources
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.Properties.Resources.resources
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\GUI.csproj.GenerateResource.Cache
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\CNPM\obj\Debug\CNPM.frmQuanLyKhachHang.resources

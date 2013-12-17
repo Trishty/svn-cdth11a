@@ -11,7 +11,7 @@ namespace DAO
         #region Tạo kết nối
         public static SqlConnection ConnectionString()
         {
-            string strcon = "Data Source=TN31093;Initial Catalog=QL_KhachSan;Integrated Security=SSPI;UID=sa";
+            string strcon = "Data Source=MYSTNOVE;Initial Catalog=QL_KhachSan;Integrated Security=SSPI;UID=sa";
             SqlConnection con = new SqlConnection(strcon);
             con.Open();
             return con;

@@ -440,6 +440,7 @@
             this.Controls.Add(this.btnSuaTenKH);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmQuanLyKhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản lý khách hàng";
             this.Load += new System.EventHandler(this.frmQuanLyKhachHang_Load);
             this.groupBox1.ResumeLayout(false);

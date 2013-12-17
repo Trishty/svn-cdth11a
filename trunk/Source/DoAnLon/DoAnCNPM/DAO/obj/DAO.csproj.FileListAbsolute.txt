@@ -26,3 +26,10 @@ C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\DAO\bin\Debug\DTO.pdb
 C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\DAO\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\DAO\obj\Debug\DAO.dll
 C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\DAO\obj\Debug\DAO.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\DAO\bin\Debug\DAO.dll
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\DAO\bin\Debug\DAO.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\DAO\bin\Debug\DTO.dll
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\DAO\bin\Debug\DTO.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\DAO\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\DAO\obj\Debug\DAO.dll
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\DAO\obj\Debug\DAO.pdb

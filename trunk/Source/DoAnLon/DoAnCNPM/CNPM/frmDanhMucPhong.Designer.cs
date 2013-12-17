@@ -37,6 +37,10 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.cboLoaiPhong = new System.Windows.Forms.ComboBox();
+            this.txtGhiChu = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.cboTinhTrang = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtPhong = new System.Windows.Forms.TextBox();
@@ -46,10 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lvwDMPhong = new System.Windows.Forms.ListView();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtGhiChu = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cboLoaiPhong = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -156,6 +156,39 @@
             this.tabPage2.Text = "Sửa danh mục phòng";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
+            // cboLoaiPhong
+            // 
+            this.cboLoaiPhong.FormattingEnabled = true;
+            this.cboLoaiPhong.Location = new System.Drawing.Point(221, 76);
+            this.cboLoaiPhong.Name = "cboLoaiPhong";
+            this.cboLoaiPhong.Size = new System.Drawing.Size(50, 21);
+            this.cboLoaiPhong.TabIndex = 19;
+            // 
+            // txtGhiChu
+            // 
+            this.txtGhiChu.Location = new System.Drawing.Point(558, 76);
+            this.txtGhiChu.Name = "txtGhiChu";
+            this.txtGhiChu.Size = new System.Drawing.Size(93, 20);
+            this.txtGhiChu.TabIndex = 18;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(507, 79);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Ghi Chú";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(154, 79);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Loại Phòng";
+            // 
             // cboTinhTrang
             // 
             this.cboTinhTrang.FormattingEnabled = true;
@@ -243,39 +276,6 @@
             this.lvwDMPhong.View = System.Windows.Forms.View.Details;
             this.lvwDMPhong.SelectedIndexChanged += new System.EventHandler(this.lvwDMPhong_SelectedIndexChanged);
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(154, 79);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(61, 13);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "Loại Phòng";
-            // 
-            // txtGhiChu
-            // 
-            this.txtGhiChu.Location = new System.Drawing.Point(558, 76);
-            this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Size = new System.Drawing.Size(93, 20);
-            this.txtGhiChu.TabIndex = 18;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(507, 79);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 13);
-            this.label6.TabIndex = 17;
-            this.label6.Text = "Ghi Chú";
-            // 
-            // cboLoaiPhong
-            // 
-            this.cboLoaiPhong.FormattingEnabled = true;
-            this.cboLoaiPhong.Location = new System.Drawing.Point(221, 76);
-            this.cboLoaiPhong.Name = "cboLoaiPhong";
-            this.cboLoaiPhong.Size = new System.Drawing.Size(50, 21);
-            this.cboLoaiPhong.TabIndex = 19;
-            // 
             // frmDanhMucPhong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,6 +284,7 @@
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "frmDanhMucPhong";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Quản Lý Khách Sạn";
             this.Load += new System.EventHandler(this.frmDanhMucPhong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

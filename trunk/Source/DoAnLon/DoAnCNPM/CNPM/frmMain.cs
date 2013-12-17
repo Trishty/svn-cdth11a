@@ -61,8 +61,8 @@ namespace CNPM
         #region Quản lý khách hàng
         private void btnKH_Click(object sender, EventArgs e)
         {
-            //frmQuanLyKhachHang KH = new frmQuanLyKhachHang();
-            //KH.ShowDialog();
+            frmQuanLyKhachHang KH = new frmQuanLyKhachHang();
+            KH.ShowDialog();
         }
         #endregion
 

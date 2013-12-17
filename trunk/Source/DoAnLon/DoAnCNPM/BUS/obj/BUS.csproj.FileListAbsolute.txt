@@ -34,3 +34,12 @@ C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\BUS\bin\Debug\DAO.pdb
 C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\BUS\obj\Debug\ResolveAssemblyReference.cache
 C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\BUS\obj\Debug\BUS.dll
 C:\Documents and Settings\The Nguyen\Desktop\DoAnCNPM\BUS\obj\Debug\BUS.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\BUS\bin\Debug\BUS.dll
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\BUS\bin\Debug\BUS.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\BUS\bin\Debug\DAO.dll
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\BUS\bin\Debug\DTO.dll
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\BUS\bin\Debug\DTO.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\BUS\bin\Debug\DAO.pdb
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\BUS\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\BUS\obj\Debug\BUS.dll
+C:\Documents and Settings\Skamylove\Desktop\SVN_Khoa\Source\DoAnLon\DoAnCNPM\BUS\obj\Debug\BUS.pdb
