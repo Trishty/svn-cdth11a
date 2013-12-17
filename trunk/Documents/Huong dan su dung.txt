@@ -1,0 +1,39 @@
+Thông tin sinh viên:
+
+	- Sinh viên 1:
+		Mã số sinh viên: 306111055
+		Họ tên: Nguyễn Lê Minh
+		Email: eternalunlimitedtears@gmail.com
+		Điện thoại: 01646 174 739
+
+	- Sinh viên 2:
+		Mã số sinh viên: 306111056
+		Họ tên: Nguyễn Hoàng Nam
+		Email: hoangnam30593@gmail.com
+		Điện thoại: 0938 168 758
+
+	- Sinh viên 3:
+		Mã số sinh viên: 306111050
+		Họ tên: Huỳnh Long Linh
+		Email: longlinh89@gmail.com
+		Điện thoại: 0967 326 012
+
+	- Sinh viên 4:
+		Mã số sinh viên: 306111042
+		Họ tên: Lê Bình Khoa
+		Email: lebinhkhoa@gmail.com
+		Điện thoại: 0906 865 352
+
+Tên cơ sở dữ liệu: QL_KhachSan.mdf + QL_KhachSan_1.ldf
+
+Tên đồ án: CNPM
+
+	- Tài khoản đăng nhập:
+		+ Username: hoangnam
+		+ Pass: 12345
+
+SVN: https://code.google.com/p/svn-cdth11a/
+
+	- Tài khoản đăng nhập:
+		+ Username: tkchungnhom4@gmail.com
+		+ Pass: tkchung123
