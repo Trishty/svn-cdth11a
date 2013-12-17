@@ -144,7 +144,7 @@ namespace CNPM
         {
             //Thông tin hoá đơn
             //hdDTO.MaHD = txtMaHD.Text;
-            hdDTO.MaHD = cboMaHD.SelectedValue.ToString();
+            hdDTO.MaHD = cboMaHD.Text;
             hdDTO.MaKH = cboTenKH.SelectedValue.ToString();
             hdDTO.TenDN = cboTenNV.SelectedValue.ToString();
             hdDTO.NgayLap = dtLap.Text;
